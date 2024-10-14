@@ -1,0 +1,326 @@
+:: StoryTitle
+Anxious Architect Narrative-Based Prototype
+
+
+:: StoryData
+{
+  "ifid": "8AF53C79-716B-4146-B293-0C2ED988F5B4",
+  "format": "Harlowe",
+  "format-version": "3.3.4",
+  "start": "Title Screen",
+  "zoom": 1
+}
+
+
+:: \ changes {"position":"1700,500","size":"100,100"}
+(text-colour:orange + yellow)["You know you're right, this is in my game, I can change this game to be how I want it! What if I just..."]
+
+[[The game begins to flicker...]]
+
+
+:: \ pick monster {"position":"1700,400","size":"100,100"}
+(text-colour:orange)[You pick you cyber creature and it is  immediately put into your 'inventory'.]
+(text-colour:orange + yellow)["Now that you have your Architect-mon, why don't we try a simple fight, don't worry it's not very hard most of the fight is just menuing, this game at it's root is about optimal menuing after all!"]
+(text-colour:orange)[Fight music begins and the player is thrown into an rpg style fight sequence against the architect.  4 menu options fill the screen reading, 'cybermon', 'fight', 'inventory', 'flee' each option is equally foriegn to you.]
+(text-colour:orange + yellow)["The four options are actually just initiator options for even more options, whenever I play this game I wish I didn't have to go through so many menus to get to what I want to do..."]
+
+[[That sounds annoying| changes]]
+[[Can't you change that?| changes]]
+[[Why? | changes]]
+
+
+:: \ ping remade {"position":"1400,500","size":"100,100"}
+(text-colour:orange)[The screen snaps to black, then lights back up like a CRT white light expanding out from the center to reveal...]
+(text-colour:orange)[the exact same game?]
+(text-colour:orange + yellow)["Wait wait wait, I know it looks the same but just see what happens when you hit the ball with your paddle!"]
+
+(text-colour:orange)[You decide to play a round, as soon as the ball hits your paddle the ball seperates into 2 balls of equal size!]
+
+(text-colour:orange + yellow)["See! In this version of the game the ball amount increases with each paddle hit, it's adds a element of..."]
+
+(text-colour:orange)[The architect is cut off after a few hits of the paddle as there are now an unessesary amount of balls on the screen and the game is lagging]
+
+(text-colour:orange + yellow)["Uhm this wasn't supposed to..."]
+
+(text-colour:orange)[The amount of balls on screen crashes the game and both the player and the architect are thrown back into the architect's office.]
+
+[[Look at the architect]]
+
+
+:: \ platformer begin {"position":"1550,350","size":"100,100"}
+(text-colour:orange)[Without a chance to say anything else the architect snaps their fingers and the screen rotates upwards toward the office ceiling where a large flat screen is mounted percariously.]
+(text-colour:orange + yellow)["This is the best screen to play this game on just you wait!"]
+(text-colour:orange)[The screen turns on with out a sound, the LED's come to life with a 90's style platformer featuring a middle aged man in some sort of jumpsuit.  The opening screen has the word "Start" flashing in large red letters.]
+
+(text-colour:orange + yellow)["Why don't you grab this controller and get to playing you'll have to let me know what you think of it as you play!"]
+
+(text-colour:orange)[The architect is shaking with excitment.]
+
+[[Hit Start]]
+
+
+:: \ response 1 {"position":"1100,400","size":"100,100"}
+(text-colour:orange + yellow)["Okay, well I'm sorry about all of this, it's not supposed to look this way, uhm here let's just go over here and we'll start this a little less than how I planned..."]
+
+[[The broken loading screen changes]]
+
+
+:: \ response 2 {"position":"1250,400","size":"100,100"}
+(text-colour:orange + yellow)["ooooh That's right I guess you wouldn't know what that means, you see I'm the one in charge of this game, the one you're playing, that's right I know you're playing a game isn't that cool."]
+(text-colour:orange)[A virtual cricket chirps]
+(text-colour:orange + yellow)["Maybe it'd be better if I showed you what I can do here look at this!"]
+(text-colour:orange)[A png of a cat appears on screen and floats in front of you.]
+
+[[...| what he can actually do]]
+[[cool. | what he can actually do]]
+
+
+
+:: \ rpg start {"position":"1700,200","size":"100,100"}
+(text-colour:orange + yellow)["What if I made a game similar to one of the highest grossing franchises in the world right now? How hard could it be they keep making the games lazily so I'm sure I can remake it with no problem!"]
+(text-colour:orange)[Without a minute to respond the architect opens a door to another room and ushers you to step through.]
+(text-colour:orange + yellow)["This is going to be my best game yet I'm sure of it, this will be sure to impress you and let you have an enjoyable experience."]
+
+
+[[Walk through the door]]
+
+
+:: \ what he can actually do {"position":"1250,500","size":"100,100"}
+(text-colour:orange)[The architect stares at you expectantly.]
+(text-colour:orange + yellow)["Okay okay, I get it you want a game right?"]
+
+[[yes|game 1 start]]
+[[i guess...|game 1 start]]
+[[if it's better than that|game 1 start]]
+
+
+:: "WATCH OUT" {"position":"1550,650","size":"100,100"}
+(text-colour:orange)[The architect scrambles around the screen knocking the controller out of the players hands, the enemy on screen slowly touches the side of the player character and the player dies]
+(text-colour:orange + yellow)["Oh gosh I did it again... I'm sorry I didn't know how excited I'd be to watch the game be played, do you think you could keep giving it a try?"]
+
+[[Keep going]]
+[[Ask to stop]]
+
+
+:: ... {"position":"800,450","size":"100,100"}
+(text-colour:orange)[*elevator music*]
+
+[[...|...continued]]
+
+
+:: ...continued {"position":"800,550","size":"100,100"}
+(text-colour:orange)[*elevator music continues*]
+
+(text-colour:orange)[you hear a [[muttering voice]] in the distance...]
+
+
+:: Ask the architect a question {"position":"1850,50","size":"100,100"}
+
+
+
+:: Ask to stop {"position":"1700,100","size":"100,100"}
+(text-colour:orange)[The player and Architect look back eachother returning to the office environment that the player has become acustomed too at this point.]
+(text-colour:orange + yellow)["I may have gotten over zealous in having you play that game, would you like to try out something else I can make?"]
+
+[[promise not to interrupt?| rpg start]]
+[[okay...| rpg start]]
+[[alright why not| rpg start]]
+
+
+
+:: Exit {"position":"350,650","size":"100,100"}
+(text-colour:orange)[This would close out the game (:]
+
+
+:: Hit Start {"position":"1550,450","size":"100,100"}
+(text-colour:orange)[You begin to play the first level of the game, it seems pretty standard full of basic enemies walking toward the player with stagnant platforms hovering over gaps with a simple end goal in sight.]
+(text-colour:orange)[You begin to get a feeling of the controls before attempting your first jump in the level and when you're about to jump...]
+
+[[a loud grating noise stops you]]
+
+
+:: Keep going {"position":"1550,750","size":"100,100"}
+(text-colour:orange)[You keep trying to continue farther and get to the end of the platformer but the architect keeps interupting the player at integral points of game play]
+(text-colour:orange + yellow)["I'm sorry I'm so sorry I keep interupting do you wanna keep going?"]
+
+[[Keep going]]
+[[Ask to stop]]
+
+
+:: Look at the architect {"position":"1550,150","size":"100,100"}
+(text-colour:orange + yellow)["Okay. So clearly that game is going to take a minute to sort itself out, I'll have someone go and clean out all those balls.  In the mean time why don't we try out another game, maybe something a bit more involved?"]
+(text-colour:orange + yellow)["Tell me, what kind of genre do you like the most?"]
+
+[[Sci-Fi!|platformer answer]]
+[[Horror!|platformer answer]]
+[[Non-Fiction.|platformer answer]]
+
+
+:: Pick an Option? {"position":"1700,800","size":"100,100"}
+(text-colour:orange)[You pick one of the menu options, and a console outputs the action but all graphics have been removed and even the console is slighty covered...]
+
+[[Pick an Option?]]
+[[Ask the architect a question]]
+
+
+:: Settings {"position":"350,550","size":"100,100"}
+(text-colour:orange)[Settings such as sound, brightness, fullscreen, etc.]
+
+
+:: Start Game {"position":"525,225","size":"100,100"}
+(text-colour:orange)[The game starts up and begins loading, the loading bar slows very slowly...]
+
+[[wait...]]
+
+
+:: The broken loading screen changes {"position":"1250,300","size":"100,100"}
+(text-colour:orange)[The screen shifts into a previously unseen office environment.]
+(text-colour:orange + yellow)[*clears throat* WELCOME TO... my office.  Don't mind the mess I've had a lot on my plate lately and haven't took the time to organize anthing.]
+(text-colour:orange)[The office is cluttered with papers and wires strewn about everywhere, there is a inspirational poster that's been scribbled on with red ink "get better poster", a caulk board with many pins and strings with no apparent pattern,  in front of you sits a computer... man?]
+(text-colour:orange + yellow)["I guess it's time to introduce myself, I'm well I guess my name doesn't matter but I'm the architect."]
+(text-colour:orange)[The architect stares at you expectently]
+
+[[OK | response 2]]
+[[the what?| response 2]]
+[[...| response 2]]
+
+
+:: The game begins to flicker again... {"position":"1700,700","size":"100,100"}
+(text-colour:orange)[You haven't even been given the chance to respond or play the game yet before the game has again reset with a flickering start, as the game picks back up to the fight sequence there are now over 15 menu options flashing on screen.]
+(text-colour:orange + yellow)[ "This is PERFECT all the sub menu's are available and we can play the game easier!"]
+(text-colour:orange)[The entire screen is covered in menu's and the cybermon graphics have been completely covered up by options.  The architect looks at you expectently waiting for you to pick an option.]
+
+[[Pick an Option?]]
+[[Ask the architect a question]]
+
+
+:: The game begins to flicker... {"position":"1700,600","size":"100,100"}
+(text-colour:orange)[The game stutters and flickers before opening back up into the fight sequence but this time the menu is much larger, there are now more than 8 options on the screen, some of the initial graphics in the fight sequence are covered by menu options.]
+(text-colour:orange + yellow)["This is SO much better! Look now you can choose your cyber-mons fight options without having to click fight!"]
+(text-colour:orange)[The fight option is still on screen flashing and the architect notices this issue immediately.]
+(text-colour:orange + yellow)["Well if all the options for fight are available we don't really need the option to hit fight anymore right? What if I just..."]
+
+[[The game begins to flicker again...]]
+
+
+:: Title Screen {"position":"300,300","size":"200,200"}
+(text-colour:orange)[Welcome to Anxious Architect!]
+
+[[Start Game]]
+[[Settings]]
+[[Exit]]
+
+
+:: Walk through the door {"position":"1700,300","size":"100,100"}
+(text-colour:orange)[As you walk through the door into a pitch black room, cheery music begins to play, the architect appears out of the darkness and begins to give a speech akin to one you've heard before in multiple different media formats...]
+(text-colour:orange + yellow)["Hello, and welcome to world of poke- I mean Architect-mon a world of little cyber creature that are cuter than anything and fight for sport.  In this world your job is catch, train, and battle these cyber creatures in order to become the best there ever was..."]
+(text-colour:orange + yellow)["Take a pick of your favorite Architect-mon!"]
+(text-colour:orange)[Three incredibly similar looking cyber creatures stare at you with massive eyes and sharp claws, your options are...]
+
+[[cybercreature blue| pick monster]]
+[[cybercreature red| pick monster]]
+[[cybercreature yellow| pick monster]]
+
+
+:: a door slams open? {"position":"950,550","size":"100,100"}
+(text-colour:orange + yellow)["here..."]
+
+[[you see a computer?]]
+
+
+:: a loud grating noise stops you {"position":"1550,550","size":"100,100"}
+(text-colour:orange)[*Dial up noises permeate the air*]
+(text-colour:orange + yellow)["Don't miss the jump!"]
+(text-colour:orange)[You are stopped in the middle of your jump, by the architects interuption, the player character plummets into a void and dies.]
+(text-colour:orange + yellow)["Oh no I'm sorry did I distract you? I'll be sure to keep quiet as you keep playing, I just know that first jump is hard, go on ahead I'll be good."]
+(text-colour:orange)[You begin the game back up and make the first jump with ease without inturruption, you continue to press on when the first enemy starts slowly walking toward you...]
+
+(text-colour:orange + yellow)[["WATCH OUT"]]
+
+
+:: game 1 start {"position":"1400,200","size":"100,100"}
+(text-colour:orange)[The architect moves the screen again, this time you are in a room in front of a CRT that's flickering with static, the architect appears in a little speech bubble at the bottom of the screen.]
+(text-colour:orange + yellow)["You want a traditional game right? How about one of the most classic games, how about copyright free version of the first video game ever, let's call it ping ;) a very simple game."]
+
+(text-colour:orange)[*Pong like paddles and UI appear on screen*]
+(text-colour:orange + yellow)["This game is a very simple volley-like game where two players take turns hitting a ball back and forth, if one player hits the other side of the screen with a ball they score a point, the first player to 7 points wins! Here how about I control the left paddle and you control the right paddle and play together! if that's something you'd like of course!"]
+
+[[play ping]]
+
+
+
+:: muttering voice {"position":"950,450","size":"100,100"}
+(text-colour:orange + yellow)["oh god oh god i'm late, holy shit what if they're already..."]
+
+[[a door slams open?]]
+
+
+:: ping continued {"position":"1400,400","size":"100,100"}
+(text-colour:orange +yellow)["Oh I knew it wasn't going to be any good, this is just a cheap knock off of an already popular game"]
+(text-colour:orange)[The architect's face turns blue and frowns for a moment before a lightbulb appears above their head.]
+(text-colour:orange + yellow)["I have an idea, what if I changed it, not only would it be fun but it would also be legally distinct as a product!"]
+
+[[sounds fun! | ping remade]]
+[[let's try it. | ping remade]]
+[[okay... | ping remade]]
+
+
+:: platformer answer {"position":"1550,250","size":"100,100"}
+(text-colour:orange + yellow)["ooooh very good, I really like fantasy myself, there's this one platforming game I used to play before becoming an architect that I spent so much time playing.  Of course now, I don't have much time for that, while making a game for new players..."]
+(text-colour:orange + yellow)["I HAVE AN IDEA! What if I made that game here for you to play? That would be a good start, they say to 'practice what you play' and what would be a better way to practice than to play that game!"]
+
+[[uhm.. | platformer begin]]
+[[okay!| platformer begin]]
+[[oh alright...| platformer begin]]
+
+
+:: play ping {"position":"1400,300","size":"100,100"}
+(text-colour:orange)[You begin to play ping when you notice the paddle of the architect gets shaky after a few volleys]
+
+(text-colour:orange + yellow)["Is this fun? Are you having fun?"]
+
+[[not really |ping continued]]
+[[kinda|ping continued]]
+[[yeah sure...|ping continued]]
+
+
+:: wait even MORE {"position":"650,625","size":"100,100"}
+(text-colour:orange)[The bar approaches the 80% marker when suddenly it begins to...]
+
+[[yeah?]]
+
+
+:: wait even more... {"position":"650,525","size":"100,100"}
+(text-colour:orange)[The bar slowly begins to approach 60%...]
+
+[[wait even MORE]]
+
+
+:: wait. {"position":"650,425","size":"100,100"}
+(text-colour:orange)[The bar continues to about 50%...]
+
+[[wait even more...]]
+
+
+:: wait... {"position":"650,325","size":"100,100"}
+(text-colour:orange)[The bar continues to about 25%...]
+
+[[wait.]]
+
+
+:: yeah? {"position":"800,350","size":"100,100"}
+(text-colour:orange)[The loading bar breaks...]
+
+[[...]]
+
+
+:: you see a computer? {"position":"1100,300","size":"100,100"}
+(text-colour:orange + yellow)["OH. hello... *it stares at the player awkwardly for a moment*"]
+
+(text-colour:orange + yellow)["How did you get in here? Did I leave the door unlocked I thought I triple checked that..."]
+
+[[The loading screen broke | response 1]]
+
+[[I took the elevator | response 1]]
+
+[[I have no idea | response 1]]
