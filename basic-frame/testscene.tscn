@@ -1,0 +1,45 @@
+[gd_scene load_steps=8 format=3 uid="uid://du5wlthboifh6"]
+
+[ext_resource type="Script" path="res://character_body_2d.gd" id="1_g22sk"]
+[ext_resource type="Texture2D" uid="uid://cb8amykg63udq" path="res://Steel_Defender.png" id="2_mkjr7"]
+[ext_resource type="Texture2D" uid="uid://d0evmlci4fonj" path="res://pixels.jpg" id="3_7swc1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_etupo"]
+size = Vector2(145, 200)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e4sd6"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_fxmb7"]
+size = Vector2(1000, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sg2yj"]
+size = Vector2(993, 94)
+
+[node name="Platformer" type="Node2D"]
+
+[node name="SubViewport" type="SubViewport" parent="."]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(551, 262)
+motion_mode = 1
+script = ExtResource("1_g22sk")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("2_mkjr7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(2.5, -5)
+shape = SubResource("RectangleShape2D_etupo")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(583, 538)
+physics_material_override = SubResource("PhysicsMaterial_e4sd6")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D"]
+mesh = SubResource("QuadMesh_fxmb7")
+texture = ExtResource("3_7swc1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_sg2yj")
