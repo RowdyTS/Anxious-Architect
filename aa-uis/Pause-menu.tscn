@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://buo431s6hf7a4"]
+
+[ext_resource type="Texture2D" uid="uid://ccaprx0xptwv" path="res://assets/my assets/UI/Pause-menu-blank.png" id="1_sifb8"]
+[ext_resource type="Texture2D" uid="uid://bjh68jhcd6vbi" path="res://assets/my assets/UI/resume.png" id="2_83nwa"]
+[ext_resource type="Texture2D" uid="uid://3y4f0bewsru6" path="res://assets/my assets/UI/Settings.png" id="3_p1bgj"]
+[ext_resource type="Texture2D" uid="uid://g4y25iryi61h" path="res://assets/my assets/UI/exit.png" id="4_w77so"]
+[ext_resource type="Texture2D" uid="uid://dawsh3jks6mk" path="res://assets/my assets/UI/quit.png" id="5_rdmbv"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 0.312
+anchor_bottom = 0.295
+offset_right = 0.575989
+offset_bottom = -0.160004
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Pause-menu-blank" type="Sprite2D" parent="."]
+position = Vector2(176, 96)
+texture = ExtResource("1_sifb8")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 61.0
+offset_right = 124.0
+offset_bottom = 70.0
+texture_normal = ExtResource("2_83nwa")
+
+[node name="TextureButton2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 78.0
+offset_right = 142.0
+offset_bottom = 88.0
+texture_normal = ExtResource("3_p1bgj")
+
+[node name="TextureButton3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 96.0
+offset_right = 142.0
+offset_bottom = 105.0
+texture_normal = ExtResource("4_w77so")
+
+[node name="TextureButton4" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 116.0
+offset_right = 142.0
+offset_bottom = 126.0
+texture_normal = ExtResource("5_rdmbv")
