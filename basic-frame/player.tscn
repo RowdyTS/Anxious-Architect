@@ -1,0 +1,113 @@
+[gd_scene load_steps=13 format=3 uid="uid://du5wlthboifh6"]
+
+[ext_resource type="Texture2D" uid="uid://bik1o5fjl6fvr" path="res://flatboy-pr-fullset-6variations.png" id="1_ve61r"]
+[ext_resource type="Texture2D" uid="uid://d0evmlci4fonj" path="res://pixels.jpg" id="2_22kdq"]
+
+[sub_resource type="GDScript" id="GDScript_3waqx"]
+script/source = "extends CharacterBody2D
+
+
+const SPEED = 300.0
+const JUMP_VELOCITY = -400.0
+
+
+func _physics_process(delta: float) -> void:
+	# Add the gravity.
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+
+	# Handle jump.
+	if Input.is_action_just_pressed(\"ui_accept\") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI actions with custom gameplay actions.
+	var direction := Input.get_axis(\"ui_left\", \"ui_right\")
+	if direction:
+		velocity.x = direction * SPEED
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	move_and_slide()
+"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nlxhp"]
+atlas = ExtResource("1_ve61r")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7afrt"]
+atlas = ExtResource("1_ve61r")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrce0"]
+atlas = ExtResource("1_ve61r")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nnf20"]
+atlas = ExtResource("1_ve61r")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hqgl4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nlxhp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7afrt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrce0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nnf20")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_f2qj1"]
+radius = 4.0
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_e4sd6"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_fxmb7"]
+size = Vector2(1000, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sg2yj"]
+size = Vector2(993, 94)
+
+[node name="Platformer" type="Node2D"]
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(551, 262)
+script = SubResource("GDScript_3waqx")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="Player"]
+scale = Vector2(0.35, 0.35)
+sprite_frames = SubResource("SpriteFrames_hqgl4")
+autoplay = "default"
+frame = 1
+frame_progress = 0.679744
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_f2qj1")
+
+[node name="BasicPlatform" type="StaticBody2D" parent="."]
+position = Vector2(550, 299)
+scale = Vector2(0.214247, -0.406868)
+physics_material_override = SubResource("PhysicsMaterial_e4sd6")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="BasicPlatform"]
+mesh = SubResource("QuadMesh_fxmb7")
+texture = ExtResource("2_22kdq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BasicPlatform"]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_sg2yj")
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(551, 265)
+zoom = Vector2(4, 4)
