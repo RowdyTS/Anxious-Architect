@@ -1,8 +1,11 @@
-[gd_scene load_steps=16 format=4 uid="uid://c6cygnbpyi81p"]
+[gd_scene load_steps=20 format=4 uid="uid://c6cygnbpyi81p"]
 
 [ext_resource type="Texture2D" uid="uid://busbopebe80fc" path="res://Platformer/flatboy-pr-fullset-6variations.png" id="1_c4m5h"]
 [ext_resource type="Texture2D" uid="uid://d4nqsufkoe4x6" path="res://Platformer/tilemap_packed.png" id="2_7s8sr"]
 [ext_resource type="PackedScene" uid="uid://djilul1f6uwwe" path="res://Platformer/platform.tscn" id="3_evyga"]
+[ext_resource type="PackedScene" uid="uid://7feswf1711s2" path="res://Platformer/killzone.tscn" id="4_u164h"]
+[ext_resource type="PackedScene" uid="uid://ukof00h7nbn6" path="res://Platformer/level_complete.tscn" id="5_00eys"]
+[ext_resource type="AudioStream" uid="uid://c6qjqix70a4hk" path="res://Architect_WIP.wav" id="6_s5pcx"]
 
 [sub_resource type="GDScript" id="GDScript_3waqx"]
 script/source = "extends CharacterBody2D
@@ -28,6 +31,7 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		
 
 	move_and_slide()
 "
@@ -311,6 +315,21 @@ texture_region_size = Vector2i(18, 18)
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_76o7x")
 
+[sub_resource type="Animation" id="Animation_20qgq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(459, 59)]
+}
+
 [sub_resource type="Animation" id="Animation_4udqh"]
 resource_name = "move"
 length = 1.5
@@ -328,26 +347,13 @@ tracks/0/keys = {
 "values": [Vector2(459, 59), Vector2(559, 59)]
 }
 
-[sub_resource type="Animation" id="Animation_20qgq"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(459, 59)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_n41s7"]
 _data = {
 "RESET": SubResource("Animation_20qgq"),
 "move": SubResource("Animation_4udqh")
 }
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_un6xf"]
 
 [node name="Platformer" type="Node2D"]
 
@@ -369,6 +375,8 @@ shape = SubResource("CircleShape2D_f2qj1")
 
 [node name="Camera" type="Camera2D" parent="Player"]
 zoom = Vector2(4, 4)
+limit_bottom = 200
+limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
@@ -388,3 +396,17 @@ libraries = {
 "": SubResource("AnimationLibrary_n41s7")
 }
 autoplay = "move"
+
+[node name="Killzone" parent="." instance=ExtResource("4_u164h")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(158, 149)
+shape = SubResource("WorldBoundaryShape2D_un6xf")
+
+[node name="level_complete" parent="." instance=ExtResource("5_00eys")]
+position = Vector2(627, 82)
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1, 0)
+stream = ExtResource("6_s5pcx")
+autoplay = true
