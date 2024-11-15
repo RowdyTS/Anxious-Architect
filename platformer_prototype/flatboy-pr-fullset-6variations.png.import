@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d0evmlci4fonj"
-path="res://.godot/imported/pixels.jpg-a22767039de9a0ab49789e2673cdb6f8.ctex"
+uid="uid://busbopebe80fc"
+path="res://.godot/imported/flatboy-pr-fullset-6variations.png-ae5c7dff905f4f6eb9981a3874e2ba0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pixels.jpg"
-dest_files=["res://.godot/imported/pixels.jpg-a22767039de9a0ab49789e2673cdb6f8.ctex"]
+source_file="res://flatboy-pr-fullset-6variations.png"
+dest_files=["res://.godot/imported/flatboy-pr-fullset-6variations.png-ae5c7dff905f4f6eb9981a3874e2ba0f.ctex"]
 
 [params]
 
