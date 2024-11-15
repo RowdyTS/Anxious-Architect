@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://djilul1f6uwwe"]
+
+[ext_resource type="Texture2D" uid="uid://bvuljwt55dep0" path="res://assets/kenney assets/kenney_pixel-platformer/Tiles/tile_0047.png" id="1_7kxex"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kcvop"]
+size = Vector2(94.6599, 25.099)
+
+[node name="Platform" type="AnimatableBody2D"]
+scale = Vector2(0.98, 0.98)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4.87755, 0.265308)
+texture = ExtResource("1_7kxex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.09534e-07, 1.94627e-06)
+rotation = -3.14159
+scale = Vector2(0.927057, -0.162621)
+shape = SubResource("RectangleShape2D_kcvop")
+one_way_collision = true
