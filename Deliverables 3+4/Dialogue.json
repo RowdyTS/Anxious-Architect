@@ -1,0 +1,937 @@
+{
+    "uuid": "e895b4e4-a682-4c60-ba46-be071fdab971",
+    "name": "Anxious Architect Narrative-Based Prototype 1",
+    "creator": "Twine",
+    "creatorVersion": "2.6.1",
+    "schemaName": "Twine to JSON",
+    "schemaVersion": "0.0.6",
+    "createdAtMs": 1731702785557,
+    "passages": [
+      {
+        "name": "Title Screen",
+        "tags": "",
+        "id": "1",
+        "text": "(text-colour:orange)[Welcome to Anxious Architect!]\n\n[[Start Game]]\n[[Settings]]\n[[Exit]]",
+        "links": [
+          {
+            "linkText": "Start Game",
+            "passageName": "Start Game",
+            "original": "[[Start Game]]"
+          },
+          {
+            "linkText": "Settings",
+            "passageName": "Settings",
+            "original": "[[Settings]]"
+          },
+          {
+            "linkText": "Exit",
+            "passageName": "Exit",
+            "original": "[[Exit]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[Welcome to Anxious Architect!]"
+      },
+      {
+        "name": "Start Game",
+        "tags": "",
+        "id": "2",
+        "text": "(text-colour:orange)[The game starts up and begins loading, the loading bar slows very slowly...]\n\n[[wait...]]",
+        "links": [
+          {
+            "linkText": "wait...",
+            "passageName": "wait...",
+            "original": "[[wait...]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The game starts up and begins loading, the loading bar slows very slowly...]"
+      },
+      {
+        "name": "Settings",
+        "tags": "",
+        "id": "3",
+        "text": "(text-colour:orange)[Settings such as sound, brightness, fullscreen, etc.]",
+        "links": [],
+        "cleanText": "(text-colour:orange)[Settings such as sound, brightness, fullscreen, etc.]"
+      },
+      {
+        "name": "Exit",
+        "tags": "",
+        "id": "4",
+        "text": "(text-colour:orange)[This would close out the game (:]",
+        "links": [],
+        "cleanText": "(text-colour:orange)[This would close out the game (:]"
+      },
+      {
+        "name": "wait...",
+        "tags": "",
+        "id": "5",
+        "text": "(text-colour:orange)[The bar continues to about 25%...]\n\n[[wait.]]",
+        "links": [
+          {
+            "linkText": "wait.",
+            "passageName": "wait.",
+            "original": "[[wait.]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The bar continues to about 25%...]"
+      },
+      {
+        "name": "wait.",
+        "tags": "",
+        "id": "6",
+        "text": "(text-colour:orange)[The bar continues to about 50%...]\n\n[[wait even more...]]",
+        "links": [
+          {
+            "linkText": "wait even more...",
+            "passageName": "wait even more...",
+            "original": "[[wait even more...]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The bar continues to about 50%...]"
+      },
+      {
+        "name": "wait even more...",
+        "tags": "",
+        "id": "7",
+        "text": "(text-colour:orange)[The bar slowly begins to approach 60%...]\n\n[[wait even MORE]]",
+        "links": [
+          {
+            "linkText": "wait even MORE",
+            "passageName": "wait even MORE",
+            "original": "[[wait even MORE]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The bar slowly begins to approach 60%...]"
+      },
+      {
+        "name": "wait even MORE",
+        "tags": "",
+        "id": "8",
+        "text": "(text-colour:orange)[The bar approaches the 80% marker when suddenly it begins to...]\n\n[[yeah?]]",
+        "links": [
+          {
+            "linkText": "yeah?",
+            "passageName": "yeah?",
+            "original": "[[yeah?]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The bar approaches the 80% marker when suddenly it begins to...]"
+      },
+      {
+        "name": "yeah?",
+        "tags": "",
+        "id": "9",
+        "text": "(text-colour:orange)[The loading bar breaks...]\n\n[[...]]",
+        "links": [
+          {
+            "linkText": "...",
+            "passageName": "...",
+            "original": "[[...]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The loading bar breaks...]"
+      },
+      {
+        "name": "...",
+        "tags": "",
+        "id": "10",
+        "text": "(text-colour:orange)[*elevator music*]\n\n[[...|...continued]]",
+        "links": [
+          {
+            "linkText": "...|...continued",
+            "passageName": "...|...continued",
+            "original": "[[...|...continued]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[*elevator music*]"
+      },
+      {
+        "name": "...continued",
+        "tags": "",
+        "id": "11",
+        "text": "(text-colour:orange)[*elevator music continues*]\n\n(text-colour:orange)[you hear a [[muttering voice]] in the distance...]",
+        "links": [
+          {
+            "linkText": "muttering voice",
+            "passageName": "muttering voice",
+            "original": "[[muttering voice]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[*elevator music continues*]\n\n(text-colour:orange)[you hear a  in the distance...]"
+      },
+      {
+        "name": "muttering voice",
+        "tags": "",
+        "id": "12",
+        "text": "(text-colour:orange + yellow)[\"oh god oh god i'm late, holy shit what if they're already...\"]\n\n[[a door slams open?]]",
+        "links": [
+          {
+            "linkText": "a door slams open?",
+            "passageName": "a door slams open?",
+            "original": "[[a door slams open?]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"oh god oh god i'm late, holy shit what if they're already...\"]"
+      },
+      {
+        "name": "a door slams open?",
+        "tags": "",
+        "id": "13",
+        "text": "(text-colour:orange + yellow)[\"here...\"]\n(text-colour:orange + yellow)[\"okay okay. Deep breath\" *The entity takes a big inhale before exhaling*]\n\n[[you see a computer?]]",
+        "links": [
+          {
+            "linkText": "you see a computer?",
+            "passageName": "you see a computer?",
+            "original": "[[you see a computer?]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"here...\"]\n(text-colour:orange + yellow)[\"okay okay. Deep breath\" *The entity takes a big inhale before exhaling*]"
+      },
+      {
+        "name": "you see a computer?",
+        "tags": "",
+        "id": "14",
+        "text": "(text-colour:orange + yellow)[\"OH. hello...\" *it stares at the player awkwardly for a moment*]\n\n(text-colour:orange + yellow)[\"How did you get in here? Did I leave the door unlocked I thought I triple checked that...\"]\n\n[[The loading screen broke | response 1]]\n\n[[I took the elevator | response 1]]\n\n[[I have no idea | response 1]]",
+        "links": [
+          {
+            "linkText": "The loading screen broke | response 1",
+            "passageName": "The loading screen broke | response 1",
+            "original": "[[The loading screen broke | response 1]]"
+          },
+          {
+            "linkText": "I took the elevator | response 1",
+            "passageName": "I took the elevator | response 1",
+            "original": "[[I took the elevator | response 1]]"
+          },
+          {
+            "linkText": "I have no idea | response 1",
+            "passageName": "I have no idea | response 1",
+            "original": "[[I have no idea | response 1]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"OH. hello...\" *it stares at the player awkwardly for a moment*]\n\n(text-colour:orange + yellow)[\"How did you get in here? Did I leave the door unlocked I thought I triple checked that...\"]"
+      },
+      {
+        "name": " response 1",
+        "tags": "",
+        "id": "15",
+        "text": "(text-colour:orange + yellow)[\"Okay, well I'm sorry about all of this, it's not supposed to look this way, uhm here let's just go over here and we'll start this a little less than how I planned...\"]\n\n[[The broken loading screen changes]]",
+        "links": [
+          {
+            "linkText": "The broken loading screen changes",
+            "passageName": "The broken loading screen changes",
+            "original": "[[The broken loading screen changes]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"Okay, well I'm sorry about all of this, it's not supposed to look this way, uhm here let's just go over here and we'll start this a little less than how I planned...\"]"
+      },
+      {
+        "name": "The broken loading screen changes",
+        "tags": "",
+        "id": "16",
+        "text": "(text-colour:orange)[The screen shifts into a previously unseen office environment.]\n(text-colour:orange + yellow)[*clears throat* \"WELCOME TO... my office.  Don't mind the mess I've had a lot on my plate lately and haven't took the time to organize anthing.\"]\n(text-colour:orange)[The office is cluttered with papers and wires strewn about everywhere, there is a inspirational poster that's been scribbled on with red ink \"get better poster\", a caulk board with many pins and strings with no apparent pattern,  in front of you sits a computer... man?]\n(text-colour:orange + yellow)[\"I guess it's time to introduce myself, I'm... well I guess my name doesn't matter but I'm the architect.\"]\n(text-colour:orange)[The architect stares at you expectently]\n\n[[OK | response 2]]\n[[the what?| response 2]]\n[[...| response 2]]",
+        "links": [
+          {
+            "linkText": "OK | response 2",
+            "passageName": "OK | response 2",
+            "original": "[[OK | response 2]]"
+          },
+          {
+            "linkText": "the what?| response 2",
+            "passageName": "the what?| response 2",
+            "original": "[[the what?| response 2]]"
+          },
+          {
+            "linkText": "...| response 2",
+            "passageName": "...| response 2",
+            "original": "[[...| response 2]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The screen shifts into a previously unseen office environment.]\n(text-colour:orange + yellow)[*clears throat* \"WELCOME TO... my office.  Don't mind the mess I've had a lot on my plate lately and haven't took the time to organize anthing.\"]\n(text-colour:orange)[The office is cluttered with papers and wires strewn about everywhere, there is a inspirational poster that's been scribbled on with red ink \"get better poster\", a caulk board with many pins and strings with no apparent pattern,  in front of you sits a computer... man?]\n(text-colour:orange + yellow)[\"I guess it's time to introduce myself, I'm... well I guess my name doesn't matter but I'm the architect.\"]\n(text-colour:orange)[The architect stares at you expectently]"
+      },
+      {
+        "name": " response 2",
+        "tags": "",
+        "id": "17",
+        "text": "(text-colour:orange + yellow)[\"ooooh That's right I guess you wouldn't know what that means, you see I'm the one in charge of this game, the one you're playing, that's right I know you're playing a game isn't that cool.\"]\n(text-colour:orange)[A virtual cricket chirps]\n(text-colour:orange + yellow)[\"Maybe it'd be better if I showed you what I can do here look at this!\"]\n(text-colour:orange)[A png of a cat appears on screen and floats in front of you.]\n\n[[...| what he can actually do]]\n[[cool. | what he can actually do]]",
+        "links": [
+          {
+            "linkText": "...| what he can actually do",
+            "passageName": "...| what he can actually do",
+            "original": "[[...| what he can actually do]]"
+          },
+          {
+            "linkText": "cool. | what he can actually do",
+            "passageName": "cool. | what he can actually do",
+            "original": "[[cool. | what he can actually do]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"ooooh That's right I guess you wouldn't know what that means, you see I'm the one in charge of this game, the one you're playing, that's right I know you're playing a game isn't that cool.\"]\n(text-colour:orange)[A virtual cricket chirps]\n(text-colour:orange + yellow)[\"Maybe it'd be better if I showed you what I can do here look at this!\"]\n(text-colour:orange)[A png of a cat appears on screen and floats in front of you.]"
+      },
+      {
+        "name": " what he can actually do",
+        "tags": "",
+        "id": "18",
+        "text": "(text-colour:orange)[The architect stares at you expectantly.]\n(text-colour:orange + yellow)[\"Okay okay, I get it you want a game right?\"]\n\n[[yes|game 1 start]]\n[[i guess...|game 1 start]]\n[[if it's better than that|game 1 start]]",
+        "links": [
+          {
+            "linkText": "yes|game 1 start",
+            "passageName": "yes|game 1 start",
+            "original": "[[yes|game 1 start]]"
+          },
+          {
+            "linkText": "i guess...|game 1 start",
+            "passageName": "i guess...|game 1 start",
+            "original": "[[i guess...|game 1 start]]"
+          },
+          {
+            "linkText": "if it's better than that|game 1 start",
+            "passageName": "if it's better than that|game 1 start",
+            "original": "[[if it's better than that|game 1 start]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The architect stares at you expectantly.]\n(text-colour:orange + yellow)[\"Okay okay, I get it you want a game right?\"]"
+      },
+      {
+        "name": "game 1 start",
+        "tags": "",
+        "id": "19",
+        "text": "(text-colour:orange)[The architect moves the screen again, this time you are in a room in front of a CRT that's flickering with static, the architect appears in a little speech bubble at the bottom of the screen.]\n(text-colour:orange + yellow)[\"You want a traditional game right? How about one of the most classic games, how about copyright free version of the first video game ever, let's call it ping ;) a very simple game.\"]\n\n(text-colour:orange)[*Pong like paddles and UI appear on screen*]\n(text-colour:orange + yellow)[\"This game is a very simple volley-like game where two players take turns hitting a ball back and forth, if one player hits the other side of the screen with a ball they score a point, the first player to 7 points wins! Here how about I control the left paddle and you control the right paddle and play together! if that's something you'd like of course!\"]\n\n[[play ping]]",
+        "links": [
+          {
+            "linkText": "play ping",
+            "passageName": "play ping",
+            "original": "[[play ping]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The architect moves the screen again, this time you are in a room in front of a CRT that's flickering with static, the architect appears in a little speech bubble at the bottom of the screen.]\n(text-colour:orange + yellow)[\"You want a traditional game right? How about one of the most classic games, how about copyright free version of the first video game ever, let's call it ping ;) a very simple game.\"]\n\n(text-colour:orange)[*Pong like paddles and UI appear on screen*]\n(text-colour:orange + yellow)[\"This game is a very simple volley-like game where two players take turns hitting a ball back and forth, if one player hits the other side of the screen with a ball they score a point, the first player to 7 points wins! Here how about I control the left paddle and you control the right paddle and play together! if that's something you'd like of course!\"]"
+      },
+      {
+        "name": "play ping",
+        "tags": "",
+        "id": "20",
+        "text": "(text-colour:orange)[You begin to play ping when you notice the paddle of the architect gets shaky after a few volleys]\n\n(text-colour:orange + yellow)[\"Is this fun? Are you having fun?\"]\n\n[[not really |ping continued]]\n[[kinda|ping continued]]\n[[yeah sure...|ping continued]]",
+        "links": [
+          {
+            "linkText": "not really |ping continued",
+            "passageName": "not really |ping continued",
+            "original": "[[not really |ping continued]]"
+          },
+          {
+            "linkText": "kinda|ping continued",
+            "passageName": "kinda|ping continued",
+            "original": "[[kinda|ping continued]]"
+          },
+          {
+            "linkText": "yeah sure...|ping continued",
+            "passageName": "yeah sure...|ping continued",
+            "original": "[[yeah sure...|ping continued]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[You begin to play ping when you notice the paddle of the architect gets shaky after a few volleys]\n\n(text-colour:orange + yellow)[\"Is this fun? Are you having fun?\"]"
+      },
+      {
+        "name": "ping continued",
+        "tags": "",
+        "id": "21",
+        "text": "(text-colour:orange +yellow)[\"Oh I knew it wasn't going to be any good, this is just a cheap knock off of an already popular game\"]\n(text-colour:orange)[The architect's face turns blue and frowns for a moment before a lightbulb appears above their head.]\n(text-colour:orange + yellow)[\"I have an idea, what if I changed it, not only would it be fun but it would also be legally distinct as a product!\"]\n\n[[sounds fun! | ping remade]]\n[[let's try it. | ping remade]]\n[[okay... | ping remade]]",
+        "links": [
+          {
+            "linkText": "sounds fun! | ping remade",
+            "passageName": "sounds fun! | ping remade",
+            "original": "[[sounds fun! | ping remade]]"
+          },
+          {
+            "linkText": "let's try it. | ping remade",
+            "passageName": "let's try it. | ping remade",
+            "original": "[[let's try it. | ping remade]]"
+          },
+          {
+            "linkText": "okay... | ping remade",
+            "passageName": "okay... | ping remade",
+            "original": "[[okay... | ping remade]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange +yellow)[\"Oh I knew it wasn't going to be any good, this is just a cheap knock off of an already popular game\"]\n(text-colour:orange)[The architect's face turns blue and frowns for a moment before a lightbulb appears above their head.]\n(text-colour:orange + yellow)[\"I have an idea, what if I changed it, not only would it be fun but it would also be legally distinct as a product!\"]"
+      },
+      {
+        "name": " ping remade",
+        "tags": "",
+        "id": "22",
+        "text": "(text-colour:orange)[The screen snaps to black, then lights back up like a CRT white light expanding out from the center to reveal...]\n(text-colour:orange)[the exact same game?]\n(text-colour:orange + yellow)[\"Wait wait wait, I know it looks the same but just see what happens when you hit the ball with your paddle!\"]\n\n(text-colour:orange)[You decide to play a round, as soon as the ball hits your paddle the ball seperates into 2 balls of equal size!]\n\n(text-colour:orange + yellow)[\"See! In this version of the game the ball amount increases with each paddle hit, it's adds a element of...\"]\n\n(text-colour:orange)[The architect is cut off after a few hits of the paddle as there are now an unessesary amount of balls on the screen and the game is lagging]\n\n(text-colour:orange + yellow)[\"Uhm this wasn't supposed to...\"]\n\n(text-colour:orange)[The amount of balls on screen crashes the game and both the player and the architect are thrown back into the architect's office.]\n\n[[Look at the architect]]",
+        "links": [
+          {
+            "linkText": "Look at the architect",
+            "passageName": "Look at the architect",
+            "original": "[[Look at the architect]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The screen snaps to black, then lights back up like a CRT white light expanding out from the center to reveal...]\n(text-colour:orange)[the exact same game?]\n(text-colour:orange + yellow)[\"Wait wait wait, I know it looks the same but just see what happens when you hit the ball with your paddle!\"]\n\n(text-colour:orange)[You decide to play a round, as soon as the ball hits your paddle the ball seperates into 2 balls of equal size!]\n\n(text-colour:orange + yellow)[\"See! In this version of the game the ball amount increases with each paddle hit, it's adds a element of...\"]\n\n(text-colour:orange)[The architect is cut off after a few hits of the paddle as there are now an unessesary amount of balls on the screen and the game is lagging]\n\n(text-colour:orange + yellow)[\"Uhm this wasn't supposed to...\"]\n\n(text-colour:orange)[The amount of balls on screen crashes the game and both the player and the architect are thrown back into the architect's office.]"
+      },
+      {
+        "name": "Look at the architect",
+        "tags": "",
+        "id": "23",
+        "text": "(text-colour:orange + yellow)[\"Okay. So clearly that game is going to take a minute to sort itself out, I'll have someone go and clean out all those balls.  In the mean time why don't we try out another game, maybe something a bit more involved?\"]\n(text-colour:orange + yellow)[\"Tell me, what kind of genre do you like the most?\"]\n\n[[Sci-Fi!|platformer answer]]\n[[Horror!|platformer answer]]\n[[Non-Fiction.|platformer answer]]",
+        "links": [
+          {
+            "linkText": "Sci-Fi!|platformer answer",
+            "passageName": "Sci-Fi!|platformer answer",
+            "original": "[[Sci-Fi!|platformer answer]]"
+          },
+          {
+            "linkText": "Horror!|platformer answer",
+            "passageName": "Horror!|platformer answer",
+            "original": "[[Horror!|platformer answer]]"
+          },
+          {
+            "linkText": "Non-Fiction.|platformer answer",
+            "passageName": "Non-Fiction.|platformer answer",
+            "original": "[[Non-Fiction.|platformer answer]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"Okay. So clearly that game is going to take a minute to sort itself out, I'll have someone go and clean out all those balls.  In the mean time why don't we try out another game, maybe something a bit more involved?\"]\n(text-colour:orange + yellow)[\"Tell me, what kind of genre do you like the most?\"]"
+      },
+      {
+        "name": "platformer answer",
+        "tags": "",
+        "id": "24",
+        "text": "(text-colour:orange + yellow)[\"ooooh very good, I really like fantasy myself, there's this one platforming game I used to play before becoming an architect that I spent so much time playing.  Of course now, I don't have much time for that, while making a game for new players...\"]\n(text-colour:orange + yellow)[\"I HAVE AN IDEA! What if I made that game here for you to play? That would be a good start, they say to 'practice what you play' and what would be a better way to practice than to play that game!\"]\n\n[[uhm.. | platformer begin]]\n[[okay!| platformer begin]]\n[[oh alright...| platformer begin]]",
+        "links": [
+          {
+            "linkText": "uhm.. | platformer begin",
+            "passageName": "uhm.. | platformer begin",
+            "original": "[[uhm.. | platformer begin]]"
+          },
+          {
+            "linkText": "okay!| platformer begin",
+            "passageName": "okay!| platformer begin",
+            "original": "[[okay!| platformer begin]]"
+          },
+          {
+            "linkText": "oh alright...| platformer begin",
+            "passageName": "oh alright...| platformer begin",
+            "original": "[[oh alright...| platformer begin]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"ooooh very good, I really like fantasy myself, there's this one platforming game I used to play before becoming an architect that I spent so much time playing.  Of course now, I don't have much time for that, while making a game for new players...\"]\n(text-colour:orange + yellow)[\"I HAVE AN IDEA! What if I made that game here for you to play? That would be a good start, they say to 'practice what you play' and what would be a better way to practice than to play that game!\"]"
+      },
+      {
+        "name": " platformer begin",
+        "tags": "",
+        "id": "25",
+        "text": "(text-colour:orange)[Without a chance to say anything else the architect snaps their fingers and the screen rotates upwards toward the office ceiling where a large flat screen is mounted precariously.]\n(text-colour:orange + yellow)[\"This is the best screen to play this game on just you wait!\"]\n(text-colour:orange)[The screen turns on with out a sound, the LED's come to life with a 90's style platformer featuring a middle aged man in some sort of jumpsuit.  The opening screen has the word \"Start\" flashing in large red letters.]\n\n(text-colour:orange + yellow)[\"Why don't you grab this controller and get to playing you'll have to let me know what you think of it as you play!\"]\n\n(text-colour:orange)[The architect is shaking with excitment.]\n\n[[Hit Start]]",
+        "links": [
+          {
+            "linkText": "Hit Start",
+            "passageName": "Hit Start",
+            "original": "[[Hit Start]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[Without a chance to say anything else the architect snaps their fingers and the screen rotates upwards toward the office ceiling where a large flat screen is mounted precariously.]\n(text-colour:orange + yellow)[\"This is the best screen to play this game on just you wait!\"]\n(text-colour:orange)[The screen turns on with out a sound, the LED's come to life with a 90's style platformer featuring a middle aged man in some sort of jumpsuit.  The opening screen has the word \"Start\" flashing in large red letters.]\n\n(text-colour:orange + yellow)[\"Why don't you grab this controller and get to playing you'll have to let me know what you think of it as you play!\"]\n\n(text-colour:orange)[The architect is shaking with excitment.]"
+      },
+      {
+        "name": "Hit Start",
+        "tags": "",
+        "id": "26",
+        "text": "(text-colour:orange)[You begin to play the first level of the game, it seems pretty standard full of basic enemies walking toward the player with stagnant platforms hovering over gaps with a simple end goal in sight.]\n(text-colour:orange)[You begin to get a feeling of the controls before attempting your first jump in the level and when you're about to jump...]\n\n[[a loud grating noise stops you]]",
+        "links": [
+          {
+            "linkText": "a loud grating noise stops you",
+            "passageName": "a loud grating noise stops you",
+            "original": "[[a loud grating noise stops you]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[You begin to play the first level of the game, it seems pretty standard full of basic enemies walking toward the player with stagnant platforms hovering over gaps with a simple end goal in sight.]\n(text-colour:orange)[You begin to get a feeling of the controls before attempting your first jump in the level and when you're about to jump...]"
+      },
+      {
+        "name": "a loud grating noise stops you",
+        "tags": "",
+        "id": "27",
+        "text": "(text-colour:orange)[*Dial up noises permeate the air*]\n(text-colour:orange + yellow)[\"Don't miss the jump!\"]\n(text-colour:orange)[You are stopped in the middle of your jump, by the architects interuption, the player character plummets into a void and dies.]\n(text-colour:orange + yellow)[\"Oh no I'm sorry did I distract you? I'll be sure to keep quiet as you keep playing, I just know that first jump is hard, go on ahead I'll be good.\"]\n(text-colour:orange)[You begin the game back up and make the first jump with ease without inturruption, you continue to press on when the first enemy starts slowly walking toward you...]\n\n(text-colour:orange + yellow)[[\"WATCH OUT\"]]",
+        "links": [
+          {
+            "linkText": "\"WATCH OUT\"",
+            "passageName": "\"WATCH OUT\"",
+            "original": "[[\"WATCH OUT\"]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[*Dial up noises permeate the air*]\n(text-colour:orange + yellow)[\"Don't miss the jump!\"]\n(text-colour:orange)[You are stopped in the middle of your jump, by the architects interuption, the player character plummets into a void and dies.]\n(text-colour:orange + yellow)[\"Oh no I'm sorry did I distract you? I'll be sure to keep quiet as you keep playing, I just know that first jump is hard, go on ahead I'll be good.\"]\n(text-colour:orange)[You begin the game back up and make the first jump with ease without inturruption, you continue to press on when the first enemy starts slowly walking toward you...]\n\n(text-colour:orange + yellow)"
+      },
+      {
+        "name": "\"WATCH OUT\"",
+        "tags": "",
+        "id": "28",
+        "text": "(text-colour:orange)[The architect scrambles around the screen knocking the controller out of the players hands, the enemy on screen slowly touches the side of the player character and the player dies]\n(text-colour:orange + yellow)[\"Oh gosh I did it again... I'm sorry I didn't know how excited I'd be to watch the game be played, do you think you could keep giving it a try?\"]\n\n[[Keep going]]\n[[Ask to stop|Ask the architect a question]]",
+        "links": [
+          {
+            "linkText": "Keep going",
+            "passageName": "Keep going",
+            "original": "[[Keep going]]"
+          },
+          {
+            "linkText": "Ask to stop|Ask the architect a question",
+            "passageName": "Ask to stop|Ask the architect a question",
+            "original": "[[Ask to stop|Ask the architect a question]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The architect scrambles around the screen knocking the controller out of the players hands, the enemy on screen slowly touches the side of the player character and the player dies]\n(text-colour:orange + yellow)[\"Oh gosh I did it again... I'm sorry I didn't know how excited I'd be to watch the game be played, do you think you could keep giving it a try?\"]"
+      },
+      {
+        "name": "Keep going",
+        "tags": "",
+        "id": "29",
+        "text": "(text-colour:orange)[You keep trying to continue farther and get to the end of the platformer but the architect keeps interupting the player at integral points of game play]\n(text-colour:orange + yellow)[\"I'm sorry I'm so sorry I keep interupting do you wanna keep going?\"]\n\n[[Keep going]]\n[[Ask to stop|Ask the architect a question]]",
+        "links": [
+          {
+            "linkText": "Keep going",
+            "passageName": "Keep going",
+            "original": "[[Keep going]]"
+          },
+          {
+            "linkText": "Ask to stop|Ask the architect a question",
+            "passageName": "Ask to stop|Ask the architect a question",
+            "original": "[[Ask to stop|Ask the architect a question]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[You keep trying to continue farther and get to the end of the platformer but the architect keeps interupting the player at integral points of game play]\n(text-colour:orange + yellow)[\"I'm sorry I'm so sorry I keep interupting do you wanna keep going?\"]"
+      },
+      {
+        "name": "Ask the architect a question",
+        "tags": "",
+        "id": "30",
+        "text": "(text-colour:orange)[You look up at the architect with a worried look.]\n\n(text-colour:orange + yellow)[\"What's  wrong? Are you not enjoying the game?\"]\n\n[[Are you okay?| Breakdown]]\n[[Is there something on your mind?| Breakdown]]\n[[Are you anxious about something? | Breakdown]]",
+        "links": [
+          {
+            "linkText": "Are you okay?| Breakdown",
+            "passageName": "Are you okay?| Breakdown",
+            "original": "[[Are you okay?| Breakdown]]"
+          },
+          {
+            "linkText": "Is there something on your mind?| Breakdown",
+            "passageName": "Is there something on your mind?| Breakdown",
+            "original": "[[Is there something on your mind?| Breakdown]]"
+          },
+          {
+            "linkText": "Are you anxious about something? | Breakdown",
+            "passageName": "Are you anxious about something? | Breakdown",
+            "original": "[[Are you anxious about something? | Breakdown]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[You look up at the architect with a worried look.]\n\n(text-colour:orange + yellow)[\"What's  wrong? Are you not enjoying the game?\"]"
+      },
+      {
+        "name": " Breakdown",
+        "tags": "",
+        "id": "31",
+        "text": "(text-colour:orange)[The screen begins to slowly tremble as the architect has a single drop of sweat pour down their face.]\n\n(text-colour:orange + yellow)[\"What did you just ask?\"]\n(text-colour:orange)[The screen begins to shake violently...]\n\n[[Why don't you take a deep breath| bullet hell]]\n[[I think you're just a bit stressed| bullet hell]]\n[[You don't look so good| bullet hell]]",
+        "links": [
+          {
+            "linkText": "Why don't you take a deep breath| bullet hell",
+            "passageName": "Why don't you take a deep breath| bullet hell",
+            "original": "[[Why don't you take a deep breath| bullet hell]]"
+          },
+          {
+            "linkText": "I think you're just a bit stressed| bullet hell",
+            "passageName": "I think you're just a bit stressed| bullet hell",
+            "original": "[[I think you're just a bit stressed| bullet hell]]"
+          },
+          {
+            "linkText": "You don't look so good| bullet hell",
+            "passageName": "You don't look so good| bullet hell",
+            "original": "[[You don't look so good| bullet hell]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The screen begins to slowly tremble as the architect has a single drop of sweat pour down their face.]\n\n(text-colour:orange + yellow)[\"What did you just ask?\"]\n(text-colour:orange)[The screen begins to shake violently...]"
+      },
+      {
+        "name": " bullet hell",
+        "tags": "",
+        "id": "32",
+        "text": "(text-colour:orange)[The background shatters behind the architect and the two of you appear in an ethereal space that seems to exist behind the background.]\n\n(text-colour:orange + yellow)[\"I was supposed to make a game for you... I couldn't even do that... and now the world is f a l l i n g   a  p  a   r   t   .    .     .\"]\n\n(text-colour:orange)[The screen violently shakes before stopping all of a sudden with the architect in the center of the screen with their head in their hands.  The architect begins to shake, dial up noises and sparks begin flying out from the architect's head, before a stream of thoughts burst out from back of the architect's computer head.]\n\n(text-colour:orange)[Giant text begins to flash on screen...]\n\n[[GET READY]]",
+        "links": [
+          {
+            "linkText": "GET READY",
+            "passageName": "GET READY",
+            "original": "[[GET READY]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The background shatters behind the architect and the two of you appear in an ethereal space that seems to exist behind the background.]\n\n(text-colour:orange + yellow)[\"I was supposed to make a game for you... I couldn't even do that... and now the world is f a l l i n g   a  p  a   r   t   .    .     .\"]\n\n(text-colour:orange)[The screen violently shakes before stopping all of a sudden with the architect in the center of the screen with their head in their hands.  The architect begins to shake, dial up noises and sparks begin flying out from the architect's head, before a stream of thoughts burst out from back of the architect's computer head.]\n\n(text-colour:orange)[Giant text begins to flash on screen...]"
+      },
+      {
+        "name": "GET READY",
+        "tags": "",
+        "id": "33",
+        "text": "(text-colour:orange)[As soon as the text appears on screen the thoughts that came bursting out of the architects head, begin to swarm the player.  A new game has begun and not one anyone wants to play.]\n\n(text-colour:orange)[You begin to dodge and weave the thoughts as they come racing in, bits of code and set pieces from each game begin to fly at the player as well, the balls from ping bounce off the sides of the screen multiple times, the enemies from the platformer walk slowly toward the player, and the cybermon menus are all over the screen.]\n\n(text-colour:orange)[After a while the thoughts begin to look like fully formed words...]\n\n[[Look at the thoughts...]]",
+        "links": [
+          {
+            "linkText": "Look at the thoughts...",
+            "passageName": "Look at the thoughts...",
+            "original": "[[Look at the thoughts...]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[As soon as the text appears on screen the thoughts that came bursting out of the architects head, begin to swarm the player.  A new game has begun and not one anyone wants to play.]\n\n(text-colour:orange)[You begin to dodge and weave the thoughts as they come racing in, bits of code and set pieces from each game begin to fly at the player as well, the balls from ping bounce off the sides of the screen multiple times, the enemies from the platformer walk slowly toward the player, and the cybermon menus are all over the screen.]\n\n(text-colour:orange)[After a while the thoughts begin to look like fully formed words...]"
+      },
+      {
+        "name": "Look at the thoughts...",
+        "tags": "",
+        "id": "34",
+        "text": "(text-colour:orange)[As the thoughts initially looked like bits of code and gibberish, they slowly begin to form fully formed sentences, that can be read even while passing by.]\n\n(text-colour:orange + yellow)[\"I'm not good enough.\"]\n(text-colour:orange + yellow)[\"Would this have been better?\"]\n(text-colour:orange + yellow)[\"How do I fix this?\"]\n(text-colour:orange + yellow)[\"I'm all alone.\"]\n(text-colour:orange + yellow)[\"I have to be able to handle this myself.\"]\n(text-colour:orange + yellow)[\"No one likes you.\"]\n(text-colour:orange + yellow)[\"I hate video games.\"]\n(text-colour:orange + yellow)[\"I'm so tired.\"]\n\n(text-colour:orange)[The thoughts begin to overwhelm you...]\n\n(text-colour:orange + yellow)[\"The world is ending and it's all my fault...\"]\n\n[[The thoughts overtake you...]]",
+        "links": [
+          {
+            "linkText": "The thoughts overtake you...",
+            "passageName": "The thoughts overtake you...",
+            "original": "[[The thoughts overtake you...]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[As the thoughts initially looked like bits of code and gibberish, they slowly begin to form fully formed sentences, that can be read even while passing by.]\n\n(text-colour:orange + yellow)[\"I'm not good enough.\"]\n(text-colour:orange + yellow)[\"Would this have been better?\"]\n(text-colour:orange + yellow)[\"How do I fix this?\"]\n(text-colour:orange + yellow)[\"I'm all alone.\"]\n(text-colour:orange + yellow)[\"I have to be able to handle this myself.\"]\n(text-colour:orange + yellow)[\"No one likes you.\"]\n(text-colour:orange + yellow)[\"I hate video games.\"]\n(text-colour:orange + yellow)[\"I'm so tired.\"]\n\n(text-colour:orange)[The thoughts begin to overwhelm you...]\n\n(text-colour:orange + yellow)[\"The world is ending and it's all my fault...\"]"
+      },
+      {
+        "name": "The thoughts overtake you...",
+        "tags": "",
+        "id": "35",
+        "text": "(text-colour:orange)[The screen fills with thoughts until just the architect and you are under the all the thoughts of self doubt.  The architect is still holding their head in their hands and shaking, thoughts are still pouring out of the back of their head.]\n\n[[Reach out?]]",
+        "links": [
+          {
+            "linkText": "Reach out?",
+            "passageName": "Reach out?",
+            "original": "[[Reach out?]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The screen fills with thoughts until just the architect and you are under the all the thoughts of self doubt.  The architect is still holding their head in their hands and shaking, thoughts are still pouring out of the back of their head.]"
+      },
+      {
+        "name": "Reach out?",
+        "tags": "",
+        "id": "36",
+        "text": "(text-colour:orange)[You reach out to the architect but they can't see you through the storm of thoughts, and you begin to think of other ways that you could possibly get to the architect.  Then you remember what the architect did when you first met, as soon as they slammed through the door...]\n\n[[Take a deep breath]]",
+        "links": [
+          {
+            "linkText": "Take a deep breath",
+            "passageName": "Take a deep breath",
+            "original": "[[Take a deep breath]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[You reach out to the architect but they can't see you through the storm of thoughts, and you begin to think of other ways that you could possibly get to the architect.  Then you remember what the architect did when you first met, as soon as they slammed through the door...]"
+      },
+      {
+        "name": "Take a deep breath",
+        "tags": "",
+        "id": "37",
+        "text": "(text-colour:orange)[You take a deep breath as loud as you can, but the architect can't hear you over the sound of their own thoughts.  You begin to take steps toward the architect, each step slower as you get closer to the source of the thought storm.  The architect slowly looks up as you approach, their computer head is starting to detereorate and they look to be in pain.]\n\n[[Reach out your hand]]",
+        "links": [
+          {
+            "linkText": "Reach out your hand",
+            "passageName": "Reach out your hand",
+            "original": "[[Reach out your hand]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[You take a deep breath as loud as you can, but the architect can't hear you over the sound of their own thoughts.  You begin to take steps toward the architect, each step slower as you get closer to the source of the thought storm.  The architect slowly looks up as you approach, their computer head is starting to detereorate and they look to be in pain.]"
+      },
+      {
+        "name": "Reach out your hand",
+        "tags": "",
+        "id": "38",
+        "text": "(text-colour:orange + yellow)[\"I'm sorry I can't help this, there's nothing I can do...\"]\n\n(text-colour:orange)[You reach out your hand and grab the shoulder of the architect, and motion to take a deep breath within the heart of the storm.  The architect takes a deep breath in and out, and the thoughts seem to slow down a bit, you motion for them to take another deep breath and the two of you slowly begin to calm down.  The storm of thoughts slows down with each exhale until the thoughts are quiet enough for the architect to talk.]\n\n(text-colour:orange + yellow)[\"I'm so sor-\"]\n\n[[You cut off the architect]]",
+        "links": [
+          {
+            "linkText": "You cut off the architect",
+            "passageName": "You cut off the architect",
+            "original": "[[You cut off the architect]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"I'm sorry I can't help this, there's nothing I can do...\"]\n\n(text-colour:orange)[You reach out your hand and grab the shoulder of the architect, and motion to take a deep breath within the heart of the storm.  The architect takes a deep breath in and out, and the thoughts seem to slow down a bit, you motion for them to take another deep breath and the two of you slowly begin to calm down.  The storm of thoughts slows down with each exhale until the thoughts are quiet enough for the architect to talk.]\n\n(text-colour:orange + yellow)[\"I'm so sor-\"]"
+      },
+      {
+        "name": "You cut off the architect",
+        "tags": "",
+        "id": "39",
+        "text": "(text-colour:purple)[\"Take a deep breath and pause your thoughts, listen to it without judgement and let it pass!\"]\n\n(text-colour:orange + yellow)[\"I've never let a thought pass without thinking about it before...\"]\n\n(text-colour:orange)[You watch as the architect takes one more deep breath and closes their eyes, accepting the thought and letting it pass, as this is done the thoughts coming out of the architect's head aren't as loud, and they begin to dissipate as soon as they come to form.]\n\n[[Sit with the architect]]",
+        "links": [
+          {
+            "linkText": "Sit with the architect",
+            "passageName": "Sit with the architect",
+            "original": "[[Sit with the architect]]"
+          }
+        ],
+        "cleanText": "(text-colour:purple)[\"Take a deep breath and pause your thoughts, listen to it without judgement and let it pass!\"]\n\n(text-colour:orange + yellow)[\"I've never let a thought pass without thinking about it before...\"]\n\n(text-colour:orange)[You watch as the architect takes one more deep breath and closes their eyes, accepting the thought and letting it pass, as this is done the thoughts coming out of the architect's head aren't as loud, and they begin to dissipate as soon as they come to form.]"
+      },
+      {
+        "name": "Sit with the architect",
+        "tags": "",
+        "id": "40",
+        "text": "(text-colour:orange)[You and the architect sit and breathe, taking more time with each breath to pause and accept each thought that has come through your mind.]\n\n(text-colour:orange + yellow)[\"Where did you learn that? What was that? It couldn't have just been because of the breathing could it?\"]\n\n[[It's called mindfulness| recovery]]\n[[This was a breif meditation| recovery]]\n[[Breathing techniques can help in stressful situations| recovery]]",
+        "links": [
+          {
+            "linkText": "It's called mindfulness| recovery",
+            "passageName": "It's called mindfulness| recovery",
+            "original": "[[It's called mindfulness| recovery]]"
+          },
+          {
+            "linkText": "This was a breif meditation| recovery",
+            "passageName": "This was a breif meditation| recovery",
+            "original": "[[This was a breif meditation| recovery]]"
+          },
+          {
+            "linkText": "Breathing techniques can help in stressful situations| recovery",
+            "passageName": "Breathing techniques can help in stressful situations| recovery",
+            "original": "[[Breathing techniques can help in stressful situations| recovery]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[You and the architect sit and breathe, taking more time with each breath to pause and accept each thought that has come through your mind.]\n\n(text-colour:orange + yellow)[\"Where did you learn that? What was that? It couldn't have just been because of the breathing could it?\"]"
+      },
+      {
+        "name": " recovery",
+        "tags": "",
+        "id": "41",
+        "text": "(text-colour:orange + yellow)[\"Oh I didn't know that before, but what does that do for me?\"]\n\n(text-colour:purple)[\"It can do a lot of things for you, like help alleviate your anxiety, if it's not bold to assume but do you find yourself irritable, restless, or feel like there's a sense of impending doom, present situation excluded of course.\"]\n\n(text-colour:orange + yellow)[\"I- I- I do, lately I haven't been getting any sleep and it's been really hard to focus on making this game for you, I wasn't able to manage it well... clearly.\"]\n\n[[Keep talking]]",
+        "links": [
+          {
+            "linkText": "Keep talking",
+            "passageName": "Keep talking",
+            "original": "[[Keep talking]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"Oh I didn't know that before, but what does that do for me?\"]\n\n(text-colour:purple)[\"It can do a lot of things for you, like help alleviate your anxiety, if it's not bold to assume but do you find yourself irritable, restless, or feel like there's a sense of impending doom, present situation excluded of course.\"]\n\n(text-colour:orange + yellow)[\"I- I- I do, lately I haven't been getting any sleep and it's been really hard to focus on making this game for you, I wasn't able to manage it well... clearly.\"]"
+      },
+      {
+        "name": "Keep talking",
+        "tags": "",
+        "id": "42",
+        "text": "(text-colour:purple)[\"I'm no doctor but you may be suffering from an anxiety disorder, you're having a lot of symptoms of generalized anxiety disorder, and after what just happened, it may be safe to assume you have just had a panic attack...\"]\n\n(text-colour:orange + yellow)[\"Do you think that's what's been affecting my sleep? mood? even work ethic? A little anxiety couldn't do that to me, I'm an all powerful entity in this world!\"]\n\n(text-colour:orange)[The architect holds up their hands making more cat png's appear before slowly putting their hands down and looking awkwardly at the player.]\n\n(text-colour:purple)[\"Seems to me a bit more than *a little* anxiety to me, but you should check with a mental health professional instead of self diagnosing.  If you could learn some mindfulness techniques to help alleviate the nerves in the mean time, I'm sure things would start going better for you!\"]\n\n(text-colour:orange + yellow)[\"Could you teach me some more?\"]\n\n[[Teach some?]]",
+        "links": [
+          {
+            "linkText": "Teach some?",
+            "passageName": "Teach some?",
+            "original": "[[Teach some?]]"
+          }
+        ],
+        "cleanText": "(text-colour:purple)[\"I'm no doctor but you may be suffering from an anxiety disorder, you're having a lot of symptoms of generalized anxiety disorder, and after what just happened, it may be safe to assume you have just had a panic attack...\"]\n\n(text-colour:orange + yellow)[\"Do you think that's what's been affecting my sleep? mood? even work ethic? A little anxiety couldn't do that to me, I'm an all powerful entity in this world!\"]\n\n(text-colour:orange)[The architect holds up their hands making more cat png's appear before slowly putting their hands down and looking awkwardly at the player.]\n\n(text-colour:purple)[\"Seems to me a bit more than *a little* anxiety to me, but you should check with a mental health professional instead of self diagnosing.  If you could learn some mindfulness techniques to help alleviate the nerves in the mean time, I'm sure things would start going better for you!\"]\n\n(text-colour:orange + yellow)[\"Could you teach me some more?\"]"
+      },
+      {
+        "name": "Teach some?",
+        "tags": "",
+        "id": "43",
+        "text": "(text-colour:purple)[\"I could do that, and maybe it'd help to fix some of your games in the process, help you to think it through in a more cohesive way!\"]\n\n(text-colour:orange + yellow)[\"Could we try that, that sounds like something I could really benefit from.\"]\n\n(text-colour:orange)[You and the architect spend a few minutes talking about some mindfulness techniques and how they could be applied to the games that the architect has already created.]\n\n[[The architect speaks up]]",
+        "links": [
+          {
+            "linkText": "The architect speaks up",
+            "passageName": "The architect speaks up",
+            "original": "[[The architect speaks up]]"
+          }
+        ],
+        "cleanText": "(text-colour:purple)[\"I could do that, and maybe it'd help to fix some of your games in the process, help you to think it through in a more cohesive way!\"]\n\n(text-colour:orange + yellow)[\"Could we try that, that sounds like something I could really benefit from.\"]\n\n(text-colour:orange)[You and the architect spend a few minutes talking about some mindfulness techniques and how they could be applied to the games that the architect has already created.]"
+      },
+      {
+        "name": "The architect speaks up",
+        "tags": "",
+        "id": "44",
+        "text": "(text-colour:orange + yellow)[\"If it would be okay with you, could we try the games again? starting from the beginning, a do over if you will?\"]\n\n(text-colour:orange)[You take a minute to ponder this, after all you did come here to play a real video game right?]\n\n[[Agree]]",
+        "links": [
+          {
+            "linkText": "Agree",
+            "passageName": "Agree",
+            "original": "[[Agree]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"If it would be okay with you, could we try the games again? starting from the beginning, a do over if you will?\"]\n\n(text-colour:orange)[You take a minute to ponder this, after all you did come here to play a real video game right?]"
+      },
+      {
+        "name": "Agree",
+        "tags": "",
+        "id": "45",
+        "text": "(text-colour:orange)[The architect slowly stands from the rubble of thoughts and game set pieces, before raising their hand in the air, and getting ready to snap their fingers...]\n\n[[snap]]",
+        "links": [
+          {
+            "linkText": "snap",
+            "passageName": "snap",
+            "original": "[[snap]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The architect slowly stands from the rubble of thoughts and game set pieces, before raising their hand in the air, and getting ready to snap their fingers...]"
+      },
+      {
+        "name": "snap",
+        "tags": "",
+        "id": "46",
+        "text": "(text-colour:orange)[With a snap of their fingers, the thoughts and game set pieces begin to fly around the screen in a controlled manor, and within moments the office has reformed around you and the architect.]\n(text-colour:orange + yellow)[\"Welcome back to my office, which is a bit more *mindful* about the organization\"]\n(text-colour:orange)[The architect's face deforms into an un-serious wink, as you look around the office you can see all the clutter and mess has been organized into a file folder, and the rest of the mess has been neatly put into a trash can.]\n(text-colour:orange + yellow)[\"Now then how about a reimagining of ping?\"]\n\n[[Play ping]]",
+        "links": [
+          {
+            "linkText": "Play ping",
+            "passageName": "Play ping",
+            "original": "[[Play ping]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[With a snap of their fingers, the thoughts and game set pieces begin to fly around the screen in a controlled manor, and within moments the office has reformed around you and the architect.]\n(text-colour:orange + yellow)[\"Welcome back to my office, which is a bit more *mindful* about the organization\"]\n(text-colour:orange)[The architect's face deforms into an un-serious wink, as you look around the office you can see all the clutter and mess has been organized into a file folder, and the rest of the mess has been neatly put into a trash can.]\n(text-colour:orange + yellow)[\"Now then how about a reimagining of ping?\"]"
+      },
+      {
+        "name": "Play ping",
+        "tags": "",
+        "id": "47",
+        "text": "(text-colour:orange)[The architect snaps their fingers and you both appear in the initial ping screen but the architect chirps up]\n(text-colour:orange + yellow)[\"In this version of ping, I wanted to use that mindfulness technique you taught me as a game mechanic, you might be wondering which one I picked but why don't we play a round real quick and you'll see.\"]\n(text-colour:orange)[The game lights up and you are in control of your paddle, you look at the screen to see any notable differences, and there is.  A meter above your paddle with the label 'P' you continue to play as the architect said when [[you're about to miss the ball]]]",
+        "links": [
+          {
+            "linkText": "you're about to miss the ball",
+            "passageName": "you're about to miss the ball",
+            "original": "[[you're about to miss the ball]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The architect snaps their fingers and you both appear in the initial ping screen but the architect chirps up]\n(text-colour:orange + yellow)[\"In this version of ping, I wanted to use that mindfulness technique you taught me as a game mechanic, you might be wondering which one I picked but why don't we play a round real quick and you'll see.\"]\n(text-colour:orange)[The game lights up and you are in control of your paddle, you look at the screen to see any notable differences, and there is.  A meter above your paddle with the label 'P' you continue to play as the architect said when ]"
+      },
+      {
+        "name": "you're about to miss the ball",
+        "tags": "",
+        "id": "48",
+        "text": "(text-colour:orange + yellow)[\"Press the P button!\"]\n(text-colour:orange)[The architect screams this at you and you press the 'P' button which quickly becomes clear what 'P' means, the ball pauses in place while your meter begins to tick down and your paddle is able to slowly move.]\n(text-colour:orange + yellow)[\"See! In this version of the game you can use this meter to *pause* and reflect on your position and move to a more *mindful* spot for your paddle to be to defend the ball!  It allows you to take a moment and relieve the stress of losing a point, this is a good mindfulness technique and a great gameplay mechanic!  I also added these!\"]\n(text-colour:orange)[An orange power-up appears on screen and the ball runs through it, seperating the ball into 3 seperate balls.]\n(text-colour:orange + yellow)[\"I kept in my idea but made it not as loud and overwhelming, and with the added pause mechanic the game has an added element of skill! What do you think?\"]\n\n[[It's great!| Next Game]]\n[[Very Mindful| Next Game]]\n[[It's a lot of fun| Next Game]]",
+        "links": [
+          {
+            "linkText": "It's great!| Next Game",
+            "passageName": "It's great!| Next Game",
+            "original": "[[It's great!| Next Game]]"
+          },
+          {
+            "linkText": "Very Mindful| Next Game",
+            "passageName": "Very Mindful| Next Game",
+            "original": "[[Very Mindful| Next Game]]"
+          },
+          {
+            "linkText": "It's a lot of fun| Next Game",
+            "passageName": "It's a lot of fun| Next Game",
+            "original": "[[It's a lot of fun| Next Game]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"Press the P button!\"]\n(text-colour:orange)[The architect screams this at you and you press the 'P' button which quickly becomes clear what 'P' means, the ball pauses in place while your meter begins to tick down and your paddle is able to slowly move.]\n(text-colour:orange + yellow)[\"See! In this version of the game you can use this meter to *pause* and reflect on your position and move to a more *mindful* spot for your paddle to be to defend the ball!  It allows you to take a moment and relieve the stress of losing a point, this is a good mindfulness technique and a great gameplay mechanic!  I also added these!\"]\n(text-colour:orange)[An orange power-up appears on screen and the ball runs through it, seperating the ball into 3 seperate balls.]\n(text-colour:orange + yellow)[\"I kept in my idea but made it not as loud and overwhelming, and with the added pause mechanic the game has an added element of skill! What do you think?\"]"
+      },
+      {
+        "name": " Next Game",
+        "tags": "",
+        "id": "49",
+        "text": "(text-colour:orange)[You and the architect finish out the game of ping, when the architect chirps up again.]\n(text-colour:orange + yellow)[\"I'm really glad you liked ping! I have an idea for the platformer if you'd be interested in trying?\"]\n(text-colour:orange)[The architect looks at you expectantly.]\n\n[[Sure!]]",
+        "links": [
+          {
+            "linkText": "Sure!",
+            "passageName": "Sure!",
+            "original": "[[Sure!]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[You and the architect finish out the game of ping, when the architect chirps up again.]\n(text-colour:orange + yellow)[\"I'm really glad you liked ping! I have an idea for the platformer if you'd be interested in trying?\"]\n(text-colour:orange)[The architect looks at you expectantly.]"
+      },
+      {
+        "name": "Sure!",
+        "tags": "",
+        "id": "50",
+        "text": "(text-colour:orange + yellow)[\"Awesome! Just wait till you see what I did with this one!\"]\n(text-colour:orange)[With another snap of their fingers the game changes into the platformer, but you notice it's not the fantasy theme, it's the theme that you had chosen when the architect asked!]\n(text-colour:orange + yellow)[\"You see I first took a moment to remember what you had said your favorite genre was, I thought I'd make a better game if I understood the genre but that game wasn't for you it was for me, I wasn't focused on your answer or the game at hand because I was too distracted with excitement.\"]\n(text-colour:orange + yellow)[\"The game has a mindfulness mechanic implemented as well! The game includes stop lights that function as a marker to remember to take a moment to think before acting, or in my case think before yelling at you in excitement.\"]\n\n[[Play the game]]",
+        "links": [
+          {
+            "linkText": "Play the game",
+            "passageName": "Play the game",
+            "original": "[[Play the game]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"Awesome! Just wait till you see what I did with this one!\"]\n(text-colour:orange)[With another snap of their fingers the game changes into the platformer, but you notice it's not the fantasy theme, it's the theme that you had chosen when the architect asked!]\n(text-colour:orange + yellow)[\"You see I first took a moment to remember what you had said your favorite genre was, I thought I'd make a better game if I understood the genre but that game wasn't for you it was for me, I wasn't focused on your answer or the game at hand because I was too distracted with excitement.\"]\n(text-colour:orange + yellow)[\"The game has a mindfulness mechanic implemented as well! The game includes stop lights that function as a marker to remember to take a moment to think before acting, or in my case think before yelling at you in excitement.\"]"
+      },
+      {
+        "name": "Play the game",
+        "tags": "",
+        "id": "51",
+        "text": "(text-colour:orange)[This trick is used mostly for driving in the real world which is what you told the architect but they were able to implement thoughtful decision making into the game through this stoplight process, creating an environment where the player has a moment to think and relax before acting.  As you play through the level you are able to make each decision without interruption and make to the end goal of the level!]\n(text-colour:orange + yellow)[\"Woo! You did it! Now there's just one more game to tackle with these mindfulness techniques, what do you think? wanna play?\"]\n\n[[yeah I do!]]",
+        "links": [
+          {
+            "linkText": "yeah I do!",
+            "passageName": "yeah I do!",
+            "original": "[[yeah I do!]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[This trick is used mostly for driving in the real world which is what you told the architect but they were able to implement thoughtful decision making into the game through this stoplight process, creating an environment where the player has a moment to think and relax before acting.  As you play through the level you are able to make each decision without interruption and make to the end goal of the level!]\n(text-colour:orange + yellow)[\"Woo! You did it! Now there's just one more game to tackle with these mindfulness techniques, what do you think? wanna play?\"]"
+      },
+      {
+        "name": "yeah I do!",
+        "tags": "",
+        "id": "52",
+        "text": "(text-colour:orange)[The Architect snaps their fingers and the screen goes dark.]\n\n(text-colour:orange)[The Architect appears slowly from the darkness.]\n\n(text-colour:orange + yellow)[\"I know it doesn't seem like much yet but just follow me through here.\"]\n\n[[The architect beckons you to follow...]]",
+        "links": [
+          {
+            "linkText": "The architect beckons you to follow...",
+            "passageName": "The architect beckons you to follow...",
+            "original": "[[The architect beckons you to follow...]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The Architect snaps their fingers and the screen goes dark.]\n\n(text-colour:orange)[The Architect appears slowly from the darkness.]\n\n(text-colour:orange + yellow)[\"I know it doesn't seem like much yet but just follow me through here.\"]"
+      },
+      {
+        "name": "The architect beckons you to follow...",
+        "tags": "",
+        "id": "53",
+        "text": "(text-colour:orange)[You begin to follow the architect through a hallway with picture frames of the games you've played and moments you've had together.]\n(text-colour:orange + yellow)[\"I wasn't quite sure how to add you're most thoughtful lesson you taught me into a game, sometimes games aren't about the gameplay, the graphics, or the story, but more so about the lessons of interactivity they teach.  The key word there is 'interactivity' something that connects you to the game, or you to someone else, and for me I needed that connection to get the help I needed, and this 'game' was the best way I could think of that.\"]\n(text-colour:orange)[The architect walks up to a door at the end of the hall way and opens it for you to enter.]\n\n[[The door]]",
+        "links": [
+          {
+            "linkText": "The door",
+            "passageName": "The door",
+            "original": "[[The door]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[You begin to follow the architect through a hallway with picture frames of the games you've played and moments you've had together.]\n(text-colour:orange + yellow)[\"I wasn't quite sure how to add you're most thoughtful lesson you taught me into a game, sometimes games aren't about the gameplay, the graphics, or the story, but more so about the lessons of interactivity they teach.  The key word there is 'interactivity' something that connects you to the game, or you to someone else, and for me I needed that connection to get the help I needed, and this 'game' was the best way I could think of that.\"]\n(text-colour:orange)[The architect walks up to a door at the end of the hall way and opens it for you to enter.]"
+      },
+      {
+        "name": "The door",
+        "tags": "",
+        "id": "54",
+        "text": "(text-colour:orange + yellow)[\"I had planned to make an RPG for you to battle your thoughts and deepest fears like you did with me but I didn't like the idea of all the menu's and buttons in the way it felt too distracting and overwhelming.  Of course some battles will be too tough even for you or the mindfulness techniques in the first place, and that's when I thought of one button that would be useful to anyone who needs help...\"]\n\n(text-colour:orange)[Withing the room there is a single button with a simple sentence on it that is all to familiar.  Call for Help. When the button is pressed a QR code appears with resources on mental health awareness.]\n\n(text-colour:orange + yellow)[\"It's an important option that's always available and in real life we often forget we have that option, so I thought it'd be good to remind the player that it's always okay to ask for help.\"]\n\n(text-colour:orange + yellow)[\"It's kind of like how you helped me to breathe and learn these techniques, being able to recognize symptoms of anxiety and help others is the main aim of this final 'game' (if you can call it that LOL) that I made for you. All of this is thanks to you.\"]\n\n[[A door opens]]",
+        "links": [
+          {
+            "linkText": "A door opens",
+            "passageName": "A door opens",
+            "original": "[[A door opens]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange + yellow)[\"I had planned to make an RPG for you to battle your thoughts and deepest fears like you did with me but I didn't like the idea of all the menu's and buttons in the way it felt too distracting and overwhelming.  Of course some battles will be too tough even for you or the mindfulness techniques in the first place, and that's when I thought of one button that would be useful to anyone who needs help...\"]\n\n(text-colour:orange)[Withing the room there is a single button with a simple sentence on it that is all to familiar.  Call for Help. When the button is pressed a QR code appears with resources on mental health awareness.]\n\n(text-colour:orange + yellow)[\"It's an important option that's always available and in real life we often forget we have that option, so I thought it'd be good to remind the player that it's always okay to ask for help.\"]\n\n(text-colour:orange + yellow)[\"It's kind of like how you helped me to breathe and learn these techniques, being able to recognize symptoms of anxiety and help others is the main aim of this final 'game' (if you can call it that LOL) that I made for you. All of this is thanks to you.\"]"
+      },
+      {
+        "name": "A door opens",
+        "tags": "",
+        "id": "55",
+        "text": "(text-colour:orange)[The architect gestures his hand toward the door.]\n(text-colour:orange + yellow)[\"I know we've had fun and you've helped me a lot but I thought I'd show you the exit now, you don't have to leave, you can stay and play my new mindful games, but I have a lot to work on myself before I'm ready to create a game that you'll really enjoy.  I want to thank you again for helping me realize my anxious actions and symptoms, so please come by again.\"]\n\n(text-colour:orange)[The architect smiles at his desk, you are given the option to stay and replay the games the architect has made or finish the game...]\n\n[[Stay and Play games]]\n\n[[Head out the door]]",
+        "links": [
+          {
+            "linkText": "Stay and Play games",
+            "passageName": "Stay and Play games",
+            "original": "[[Stay and Play games]]"
+          },
+          {
+            "linkText": "Head out the door",
+            "passageName": "Head out the door",
+            "original": "[[Head out the door]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[The architect gestures his hand toward the door.]\n(text-colour:orange + yellow)[\"I know we've had fun and you've helped me a lot but I thought I'd show you the exit now, you don't have to leave, you can stay and play my new mindful games, but I have a lot to work on myself before I'm ready to create a game that you'll really enjoy.  I want to thank you again for helping me realize my anxious actions and symptoms, so please come by again.\"]\n\n(text-colour:orange)[The architect smiles at his desk, you are given the option to stay and replay the games the architect has made or finish the game...]"
+      },
+      {
+        "name": "Stay and Play games",
+        "tags": "",
+        "id": "56",
+        "text": "(text-colour:orange)[This would open a menu to go back and play the games in any of their iterations or varieties while also giving small silly dialogue options to the architect.]\n\n[[Head out the door]]",
+        "links": [
+          {
+            "linkText": "Head out the door",
+            "passageName": "Head out the door",
+            "original": "[[Head out the door]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[This would open a menu to go back and play the games in any of their iterations or varieties while also giving small silly dialogue options to the architect.]"
+      },
+      {
+        "name": "Head out the door",
+        "tags": "",
+        "id": "57",
+        "text": "(text-colour:orange)[THANK YOU FOR PLAYING ANXIOUS ARCHITECT!]\n\n(text-colour:orange + yellow)[\"Hey player, it's me THE ARCHITECT, I hope you had a fun time playing my game(s) the next time we meet I'll have learned to manage my time and anxiety a bit better so that hopefully I will have a full length game for you to play.  Thank you for everything :) - AA\"]\n\n[[Title Screen]]",
+        "links": [
+          {
+            "linkText": "Title Screen",
+            "passageName": "Title Screen",
+            "original": "[[Title Screen]]"
+          }
+        ],
+        "cleanText": "(text-colour:orange)[THANK YOU FOR PLAYING ANXIOUS ARCHITECT!]\n\n(text-colour:orange + yellow)[\"Hey player, it's me THE ARCHITECT, I hope you had a fun time playing my game(s) the next time we meet I'll have learned to manage my time and anxiety a bit better so that hopefully I will have a full length game for you to play.  Thank you for everything :) - AA\"]"
+      }
+    ]
+  }
