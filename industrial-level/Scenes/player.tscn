@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://drkshb6hgcaup"]
+[gd_scene load_steps=11 format=3 uid="uid://drkshb6hgcaup"]
 
 [ext_resource type="Texture2D" uid="uid://busbopebe80fc" path="res://Sprites/flatboy-pr-fullset-6variations.png" id="1_a0uk8"]
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_kl8et"]
+[ext_resource type="AudioStream" uid="uid://b5ss67dmihhr1" path="res://Audio/Jump Sound.mp3" id="3_pvymm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_moxhr"]
 atlas = ExtResource("1_a0uk8")
@@ -57,7 +58,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nmna4"]
-size = Vector2(16, 27)
+size = Vector2(22, 27)
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
@@ -69,5 +70,8 @@ sprite_frames = SubResource("SpriteFrames_6x1pf")
 animation = &"Jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-2, 2.5)
+position = Vector2(1, 2.5)
 shape = SubResource("RectangleShape2D_nmna4")
+
+[node name="Jump_Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_pvymm")
