@@ -1,13 +1,18 @@
-[gd_scene load_steps=20 format=3 uid="uid://sdqdp3ej5c8"]
+[gd_scene load_steps=26 format=3 uid="uid://sdqdp3ej5c8"]
 
+[ext_resource type="Texture2D" uid="uid://4klsqouj01pa" path="res://Sprites/industrial-bg.png" id="1_4a4kq"]
 [ext_resource type="PackedScene" uid="uid://drkshb6hgcaup" path="res://Scenes/player.tscn" id="1_ap7f1"]
 [ext_resource type="Texture2D" uid="uid://biejp3ch275ta" path="res://Sprites/kenney_pixel-platformer-industrial-expansion/Tilemap/tilemap_packed.png" id="2_sy3oc"]
 [ext_resource type="PackedScene" uid="uid://br3dw1p1qab8o" path="res://Scenes/industrial_platform.tscn" id="3_ggf1u"]
 [ext_resource type="Texture2D" uid="uid://ca4iflg56dmqy" path="res://Sprites/tilemap_packed.png" id="3_ms7i7"]
 [ext_resource type="PackedScene" uid="uid://bblbmxkld0cxf" path="res://Scenes/killzone.tscn" id="4_ud705"]
-[ext_resource type="Texture2D" uid="uid://dsgkjmk0f0iwi" path="res://Sprites/industry background.JPG" id="5_c67qe"]
 [ext_resource type="PackedScene" uid="uid://dhirh15l84j3u" path="res://Scenes/win_diamond.tscn" id="7_s6r5y"]
 [ext_resource type="AudioStream" uid="uid://ytevttljrpgv" path="res://Audio/Level Song.mp3" id="8_3b2pv"]
+[ext_resource type="Texture2D" uid="uid://olq7fiwrynkv" path="res://Sprites/Architect-screen_head.png" id="9_ctvkj"]
+[ext_resource type="Script" path="res://Scripts/stop_1.gd" id="9_qv085"]
+[ext_resource type="FontFile" uid="uid://bs5xjqp2tgglu" path="res://Sprites/Retro Gaming.ttf" id="10_l0st3"]
+[ext_resource type="Script" path="res://Scripts/stop_2.gd" id="12_fj8ai"]
+[ext_resource type="Script" path="res://Scripts/stop_3.gd" id="13_hcp3t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mvvj0"]
 texture = ExtResource("3_ms7i7")
@@ -474,15 +479,15 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wet1c"]
 size = Vector2(271, 130)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_isigg"]
+size = Vector2(9, 183)
+
 [node name="industrial_level" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(1959, -52)
-texture = ExtResource("5_c67qe")
-
-[node name="Background2" type="Sprite2D" parent="."]
-position = Vector2(603, -54)
-texture = ExtResource("5_c67qe")
+position = Vector2(1126, -42)
+scale = Vector2(3.73349, 3.407)
+texture = ExtResource("1_4a4kq")
 
 [node name="Player" parent="." instance=ExtResource("1_ap7f1")]
 position = Vector2(-17, 31)
@@ -538,3 +543,85 @@ position = Vector2(1560, -119)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone (Poison)"]
 position = Vector2(108.5, 197)
 shape = SubResource("RectangleShape2D_wet1c")
+
+[node name="Stop1" type="Area2D" parent="."]
+position = Vector2(315, -12)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("9_qv085")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stop1"]
+position = Vector2(5.5, -81.5)
+shape = SubResource("RectangleShape2D_isigg")
+
+[node name="Speech_Bubble" type="Label" parent="Stop1"]
+visible = false
+offset_left = -28.0
+offset_top = -77.0
+offset_right = 229.0
+offset_bottom = -54.0
+scale = Vector2(0.565269, 0.839837)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_l0st3")
+theme_override_font_sizes/font_size = 13
+text = "Be careful, it's a long way down"
+
+[node name="Architect" type="Sprite2D" parent="Stop1"]
+visible = false
+position = Vector2(-37.75, -42.625)
+scale = Vector2(0.238281, 0.238281)
+texture = ExtResource("9_ctvkj")
+
+[node name="Stop2" type="Area2D" parent="."]
+position = Vector2(656, 54)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("12_fj8ai")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stop2"]
+position = Vector2(2, -86)
+shape = SubResource("RectangleShape2D_isigg")
+
+[node name="Architect" type="Sprite2D" parent="Stop2"]
+visible = false
+position = Vector2(-37.75, -42.625)
+scale = Vector2(0.238281, 0.238281)
+texture = ExtResource("9_ctvkj")
+
+[node name="Speech_Bubble" type="Label" parent="Stop2"]
+visible = false
+offset_left = -29.0
+offset_top = -78.0
+offset_right = 337.0
+offset_bottom = -55.0
+scale = Vector2(0.418087, 0.795706)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_l0st3")
+text = "This one is moving, be really careful"
+
+[node name="Stop3" type="Area2D" parent="."]
+position = Vector2(1506, -40)
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("13_hcp3t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stop3"]
+position = Vector2(2, -86)
+shape = SubResource("RectangleShape2D_isigg")
+
+[node name="Architect" type="Sprite2D" parent="Stop3"]
+visible = false
+position = Vector2(-37.75, -42.625)
+scale = Vector2(0.238281, 0.238281)
+texture = ExtResource("9_ctvkj")
+
+[node name="Speech_Bubble" type="Label" parent="Stop3"]
+visible = false
+offset_left = -42.0
+offset_top = -78.0
+offset_right = 329.0
+offset_bottom = -55.0
+scale = Vector2(0.418087, 0.795706)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_l0st3")
+text = "That sludge looks toxic, don't fall in!"

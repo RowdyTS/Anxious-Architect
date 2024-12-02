@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsgkjmk0f0iwi"
-path="res://.godot/imported/industry background.JPG-6648933de364a3c220c6e3140e26dc5c.ctex"
+uid="uid://olq7fiwrynkv"
+path="res://.godot/imported/Architect-screen_head.png-5fe5feeeb0be7f1df63aa17f9d3bf44b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/industry background.JPG"
-dest_files=["res://.godot/imported/industry background.JPG-6648933de364a3c220c6e3140e26dc5c.ctex"]
+source_file="res://Sprites/Architect-screen_head.png"
+dest_files=["res://.godot/imported/Architect-screen_head.png-5fe5feeeb0be7f1df63aa17f9d3bf44b.ctex"]
 
 [params]
 
