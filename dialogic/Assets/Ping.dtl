@@ -1,0 +1,7 @@
+[background arg="res://Assets/office-base.png" fade="0.0"]
+join "The Architect" leftmost [animation="Slide In Left"]
+"The Architect": "You want a traditional game right? How about one of the most classic games, how about copyright free version of the first video game ever, let's call it ping ;) a very simple game."
+[background arg="res://Assets/office-base.png" fade="0.0"]
+"The Architect": Pong like paddles and UI appear on screen
+"This game is a very simple volley-like game where two players take turns hitting a ball back and forth, if one player hits the other side of the screen with a ball they score a point, the first player to 7 points wins! Here how about I control the left paddle and you control the right paddle and play together! if that's something you'd like of course!"
+It seems you have no choice...

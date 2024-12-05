@@ -1,0 +1,46 @@
+[background arg="res://Assets/loading.PNG" fade="0.0"]
+join "The Architect" center
+You reach out to the architect but they can't see you through the storm of thoughts, and you begin to think of other ways that you could possibly get to the architect. Then you remember what the architect did when you first met, as soon as they slammed through the door...
+- Take a deep breath
+You take a deep breath as loud as you can, but the architect can't hear you over the sound of their own thoughts. You begin to take steps toward the architect, each step slower as you get closer to the source of the thought storm. The architect slowly looks up as you approach, their computer head is starting to detereorate and they look to be in pain.
+- Reach out your hand
+- Motion to breathe
+"The Architect": "I'm sorry I can't help this, there's nothing I can do..."
+You reach out your hand and grab the shoulder of the architect, and motion to take a deep breath within the heart of the storm.
+The architect takes a deep breath in and out, and the thoughts seem to slow down a bit, you motion for them to take another deep breath and the two of you slowly begin to calm down.
+The storm of thoughts slows down with each exhale until the thoughts are quiet enough for the architect to talk.
+"The Architect": "I'm so sor-"
+You cut off the architect
+[text_input placeholder=""Take a deep breath and pause your thoughts, listen to it without judgement and let it pass!""]
+"The Architect": "I've never let a thought pass without thinking about it before..."
+You watch as the architect takes one more deep breath and closes their eyes, accepting the thought and letting it pass,  the thoughts coming out of the architect's head aren't as loud, and they begin to dissipate as soon as they come to form.
+You and the architect sit and breathe, taking more time with each breath to pause and accept each thought that has come through your mind.
+"The Architect": "Where did you learn that? What was that? It couldn't have just been because of the breathing could it?"
+- It's called mindfulness
+- That was a breif meditation
+- Breathing techniques can help in stressful situations
+"The Architect": "Oh I didn't know that before, but what does that do for me?"
+you: "It can do a lot of things for you, like help alleviate your anxiety, if it's not bold to assume but do you find yourself irritable, restless, or feel like there's a sense of impending doom, present situation excluded of course."
+"The Architect": "I- I- I do, lately I haven't been getting any sleep and it's been really hard to focus on making this game for you, I wasn't able to manage it well... clearly."
+you: "I'm no doctor but you may be suffering from an anxiety disorder, you're having a lot of symptoms of generalized anxiety disorder, and after what just happened, it may be safe to assume you have just had a panic attack..."
+"The Architect": "Do you think that's what's been affecting my sleep? mood? even work ethic? A little anxiety couldn't do that to me, I'm an all powerful entity in this world!"
+The architect holds up their hands making more cat png's appear before slowly putting their hands down and looking awkwardly at the player.
+you: "Seems to me a bit more than a little anxiety to me, but you should check with a mental health professional instead of self diagnosing."
+you: "If you could learn some mindfulness techniques to help alleviate the nerves in the mean time, I'm sure things would start going better for you!"
+"The Architect": "Could you teach me some more?"
+- yes
+- of course
+you: "I could do that, and maybe it'd help to fix some of your games in the process, help you to think it through in a more cohesive way!"
+"The Architect": "Could we try that, that sounds like something I could really benefit from."
+You and the architect spend a few minutes talking about some mindfulness techniques and how they could be applied to the games that the architect has already created.
+The architect speaks up
+"The Architect": "If it would be okay with you, could we try the games again? starting from the beginning, a do over if you will?"
+You take a minute to ponder this, after all you did come here to play a real video game right?
+- Agree
+The architect slowly stands from the rubble of thoughts and game set pieces, before raising their hand in the air, and getting ready to snap their fingers...
+With a snap of their fingers, the thoughts and game set pieces begin to fly around the screen in a controlled manor, and within moments the office has reformed around you and the architect.
+[background arg="res://Assets/office-base.png" fade="0.0"]
+"The Architect": "Welcome back to my office, which is a bit more mindful about the organization"
+The architect's face deforms into an un-serious wink, as you look around the office you can see all the clutter and mess has been organized into a file folder, and the rest of the mess has been neatly put into a trash can.
+"The Architect": "Now then how about a reimagining of ping?"
+you: "sounds good to me!"
