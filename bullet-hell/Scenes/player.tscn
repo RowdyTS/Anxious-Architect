@@ -1,9 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ba8p8rowagp2v"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_wv3g7"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cs5ki"]
-size = Vector2(20, 20)
+[ext_resource type="Texture2D" uid="uid://bh3i6v3dkfsk6" path="res://assets/hand.png" id="2_wgqwv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ap277"]
 
@@ -13,7 +11,9 @@ collision_mask = 3
 script = ExtResource("1_wv3g7")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = SubResource("PlaceholderTexture2D_cs5ki")
+position = Vector2(5.36442e-07, -0.0352162)
+scale = Vector2(0.0516432, 0.0507629)
+texture = ExtResource("2_wgqwv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_ap277")
