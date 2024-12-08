@@ -1,0 +1,44 @@
+[background arg="res://Assets/loading.PNG" fade="1.0"]
+The game starts up and begins loading, the loading, bar slows very slowly...
+The bar continues to about 25%...
+The bar continues to about 50%...
+The bar slowly begins to approach 60%...
+The bar approaches the 80% marker when suddenly it begins to...
+The loading bar breaks...
+elevator music
+elevator music continues...
+you hear a muttering voice in the distance...
+"oh god oh god i'm late, holy shit what if they're already..."
+join "The Architect" center [animation="Fade In"]
+"The Architect": "here..."
+"The Architect": "okay okay. Deep breath"
+The entity takes a big inhale before exhaling
+"The Architect": "OH. hello..."
+it stares at the player awkwardly for a moment
+"The Architect": "How did you get in here? Did I leave the door unlocked I thought I triple checked that..."
+- I have no idea...
+- I took the elevator
+- The loading screen broke
+"The Architect": "Okay, well I'm sorry about all of this, it's not supposed to look this way, uhm here let's just go over here and we'll start this a little less than how I planned..."
+[background arg="res://Assets/office-base.png" fade="2.0"]
+The screen shifts into a previously unseen office environment.
+"The Architect": clears throat
+"The Architect": "WELCOME TO... my office. Don't mind the mess I've had a lot on my plate lately and haven't took the time to organize anthing."
+The office is cluttered with papers and wires strewn about everywhere, there is a inspirational poster that's been scribbled on with red ink "get better poster", a caulk board with many pins and strings with no apparent pattern, in front of you sits a computer... man?
+"The Architect": "I guess it's time to introduce myself, I'm... well I guess my name doesn't matter but I'm the architect."
+The architect stares at you expectently
+- OK
+- the what?
+- ...
+"The Architect": "ooooh That's right I guess you wouldn't know what that means, you see I'm the one in charge of this game, the one you're playing, that's right I know you're playing a game isn't that cool."
+[sound volume="0.0"]
+A virtual cricket chirps
+"The Architect": "Maybe it'd be better if I showed you what I can do here look at this!"
+A png of a cat appears on screen and floats in front of you.
+- ...
+- cool.
+- can't you do more?
+"The Architect": "Okay okay, I get it you want a game right?"
+- yes
+- i guess...
+- if it's better than that...
