@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://caei0ioxjil2t"]
+
+[ext_resource type="Texture2D" uid="uid://kan6ulha5vmf" path="res://start-screen.png" id="1_i4v4x"]
+[ext_resource type="Texture2D" uid="uid://c8gjmcxdy2bri" path="res://start-button.png" id="2_fosid"]
+[ext_resource type="Texture2D" uid="uid://cig0k1rh37ohr" path="res://start-button-hover.png" id="3_cc3me"]
+
+[node name="Start-screen" type="Sprite2D"]
+position = Vector2(176, 96)
+texture = ExtResource("1_i4v4x")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = -31.0
+offset_top = -67.0
+offset_right = 31.0
+offset_bottom = 44.0
+texture_normal = ExtResource("2_fosid")
+texture_hover = ExtResource("3_cc3me")
