@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=3 uid="uid://c5opb4gowpy7g"]
+
+[ext_resource type="Script" path="res://Scripts/bullet.gd" id="1_ai4yk"]
+[ext_resource type="Texture2D" uid="uid://diqw04wwgono3" path="res://assets/Mistake Bullet.png" id="2_8ci7v"]
+[ext_resource type="Texture2D" uid="uid://b5rk6tkk3gj64" path="res://assets/cant think bullet.png" id="3_ikdjw"]
+[ext_resource type="Texture2D" uid="uid://d0gxa7vk1l4to" path="res://assets/cant breathe bullet.png" id="4_eivlx"]
+[ext_resource type="Texture2D" uid="uid://bqctcri11vxfb" path="res://assets/failure bullet.png" id="5_p6js3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6etrv"]
+size = Vector2(59, 19)
+
+[node name="bullet" type="Area2D"]
+script = ExtResource("1_ai4yk")
+texture_array = Array[Texture2D]([ExtResource("2_8ci7v"), ExtResource("3_ikdjw"), ExtResource("4_eivlx"), ExtResource("5_p6js3")])
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1, 0)
+scale = Vector2(0.197619, 0.197619)
+texture = ExtResource("2_8ci7v")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(4.5, -0.5)
+scale = Vector2(2.95, 0.85)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4.5, -0.5)
+shape = SubResource("RectangleShape2D_6etrv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhirh15l84j3u"]
+
+[ext_resource type="Texture2D" uid="uid://pbqykow37ewi" path="res://Sprites/tile_0067.png" id="1_xn1x8"]
+[ext_resource type="Script" path="res://Scripts/win_diamond.gd" id="1_y4p8o"]
+[ext_resource type="AudioStream" uid="uid://dkx444dhdg8h0" path="res://Audio/Level Win.mp3" id="3_blwuc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5l2r4"]
+radius = 6.0
+
+[node name="Win_Diamond" type="Area2D"]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_y4p8o")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xn1x8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5l2r4")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_blwuc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
