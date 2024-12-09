@@ -1,4 +1,4 @@
-[background arg="res://Assets/loading.PNG" fade="0.0"]
+[background arg="res://Assets/my assets/environment/office-final_max-clutter.png" fade="0.0"]
 join "The Architect" center [animation="Fade In" length="1.0"]
 You look up at the architect with a worried expression.
 "The Architect": "What's wrong? Are you not enjoying the game?"
@@ -12,7 +12,7 @@ The screen begins to shake violently...
 - I think you're just a bit stressed
 - You don't look so good
 The background shatters behind the architect and the two of you appear in an ethereal space that seems to exist behind the background.
-[background arg="res://Assets/office-base.png" fade="0.0"]
+[background arg="res://Assets/my assets/environment/bullet-hell-bg.png" fade="0.0"]
 "The Architect": "I was supposed to make a game for you... I couldn't even do that... and now the world is f a l l i n g a p a r t . . ."
 The screen violently shakes before stopping all of a sudden with the architect in the center of the screen with their head in their hands. The architect begins to shake, dial up noises and sparks begin flying out from the architect's head, before a stream of thoughts burst out from back of the architect's computer head.
 Giant text begins to flash on screen...

@@ -1,10 +1,10 @@
-[background arg="res://Assets/office-base.png" fade="0.0"]
+[background arg="res://Assets/my assets/environment/office-final_no-clutter.png" fade="0.0"]
 join "The Architect" center
 "The Architect": "Woo! You did it! Now there's just one more game to tackle with these mindfulness techniques, what do you think? wanna play?"
 you: "Yeah I do!"
 The Architect snaps their fingers and the screen goes dark...
 leave "The Architect" [animation="Instant Out" length="0.0"]
-[background fade="0.0"]
+[background arg="res://Assets/my assets/environment/office-final_no-clutter.png" fade="0.0"]
 The Architect appears slowly from the darkness.
 join "The Architect" center [animation="Fade In" length="3.0"]
 "The Architect": "I know it doesn't seem like much yet but just follow me through here."

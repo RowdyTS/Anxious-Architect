@@ -20,7 +20,7 @@ it stares at the player awkwardly for a moment
 - I took the elevator
 - The loading screen broke
 "The Architect": "Okay, well I'm sorry about all of this, it's not supposed to look this way, uhm here let's just go over here and we'll start this a little less than how I planned..."
-[background arg="res://Assets/office-base.png" fade="2.0"]
+[background arg="res://Assets/my assets/environment/office-final_max-clutter.png" fade="2.0"]
 The screen shifts into a previously unseen office environment.
 "The Architect": clears throat
 "The Architect": "WELCOME TO... my office. Don't mind the mess I've had a lot on my plate lately and haven't took the time to organize anthing."

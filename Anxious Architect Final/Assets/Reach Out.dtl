@@ -1,4 +1,4 @@
-[background arg="res://Assets/loading.PNG" fade="0.0"]
+[background arg="res://Assets/my assets/environment/bullet-hell-bg.png" fade="0.0"]
 join "The Architect" center
 You reach out to the architect but they can't see you through the storm of thoughts, and you begin to think of other ways that you could possibly get to the architect. Then you remember what the architect did when you first met, as soon as they slammed through the door...
 - Take a deep breath
@@ -39,7 +39,7 @@ You take a minute to ponder this, after all you did come here to play a real vid
 - Agree
 The architect slowly stands from the rubble of thoughts and game set pieces, before raising their hand in the air, and getting ready to snap their fingers...
 With a snap of their fingers, the thoughts and game set pieces begin to fly around the screen in a controlled manor, and within moments the office has reformed around you and the architect.
-[background arg="res://Assets/office-base.png" fade="0.0"]
+[background arg="res://Assets/my assets/environment/office-final_mid-clutter.png" fade="0.0"]
 "The Architect": "Welcome back to my office, which is a bit more mindful about the organization"
 The architect's face deforms into an un-serious wink, as you look around the office you can see all the clutter and mess has been organized into a file folder, and the rest of the mess has been neatly put into a trash can.
 "The Architect": "Now then how about a reimagining of pong?"

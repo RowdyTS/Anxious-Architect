@@ -19,6 +19,7 @@ texture = ExtResource("2_2556a")
 
 [node name="Pause-menu" parent="Sprite2D" instance=ExtResource("6_w363q")]
 process_mode = 3
+visible = false
 z_index = 4
 offset_left = -176.0
 offset_top = -95.4083
@@ -26,6 +27,7 @@ offset_right = -176.0
 offset_bottom = -95.4083
 
 [node name="settingsMenu" parent="Sprite2D" instance=ExtResource("7_mn2ui")]
+visible = false
 z_index = 5
 offset_left = -176.0
 offset_top = -96.5916
