@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://hcqyy8pj1syg"
+path="res://.godot/imported/burnt-out-hell, lead guitar, Rec (150).wav-8e3496d503160a59329b4e3d4053cfe1.sample"
+
+[deps]
+
+source_file="res://music/bullet-hell/burnt-out-hell/Audio/burnt-out-hell, lead guitar, Rec (150).wav"
+dest_files=["res://.godot/imported/burnt-out-hell, lead guitar, Rec (150).wav-8e3496d503160a59329b4e3d4053cfe1.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

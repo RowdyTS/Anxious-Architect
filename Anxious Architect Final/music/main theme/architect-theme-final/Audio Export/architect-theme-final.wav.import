@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cikibtlj2ofg6"
+path="res://.godot/imported/architect-theme-final.wav-6bdd8049672e86f23b1232fc5e113997.sample"
+
+[deps]
+
+source_file="res://music/main theme/architect-theme-final/Audio Export/architect-theme-final.wav"
+dest_files=["res://.godot/imported/architect-theme-final.wav-6bdd8049672e86f23b1232fc5e113997.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

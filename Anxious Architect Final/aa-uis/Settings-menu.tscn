@@ -1,0 +1,153 @@
+[gd_scene load_steps=14 format=3 uid="uid://c4470ekmcldj3"]
+
+[ext_resource type="Script" path="res://aa-uis/settings_menu.gd" id="1_5tjya"]
+[ext_resource type="Texture2D" uid="uid://b1piqy3gdj4wa" path="res://aa-uis/assets/my assets/UI/settings-menu.png" id="1_p4u40"]
+[ext_resource type="Texture2D" uid="uid://ctopwwh6wbd74" path="res://aa-uis/assets/my assets/UI/volume-settings.png" id="2_1snni"]
+[ext_resource type="Texture2D" uid="uid://duug1ow41vupj" path="res://aa-uis/assets/my assets/UI/Back-button.png" id="2_noxds"]
+[ext_resource type="Texture2D" uid="uid://q5dhfyagf345" path="res://aa-uis/assets/my assets/UI/slider-L-button.png" id="3_kcgqh"]
+[ext_resource type="Texture2D" uid="uid://brm2ekrvbdjw6" path="res://aa-uis/assets/my assets/UI/Back-button-hovert.png" id="4_oos0p"]
+[ext_resource type="Texture2D" uid="uid://caiwtoyk5etdr" path="res://aa-uis/assets/my assets/UI/slider-R-button.png" id="4_w25nj"]
+[ext_resource type="Texture2D" uid="uid://dhv8iwt4hasfl" path="res://aa-uis/assets/my assets/UI/slider-indicator.png" id="5_5etg4"]
+[ext_resource type="Texture2D" uid="uid://bns3fvl12d05q" path="res://aa-uis/assets/my assets/UI/slider-bar.png" id="6_7mg24"]
+[ext_resource type="Script" path="res://aa-uis/master-volume.gd" id="6_iv6q5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kffcx"]
+texture = ExtResource("6_7mg24")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i7ouw"]
+texture = ExtResource("6_7mg24")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0pq8t"]
+texture = ExtResource("6_7mg24")
+
+[node name="settingsMenu" type="Control"]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_5tjya")
+
+[node name="Settings-menu" type="Sprite2D" parent="."]
+position = Vector2(176, 96)
+texture = ExtResource("1_p4u40")
+
+[node name="back" type="TextureButton" parent="Settings-menu"]
+offset_left = 78.0
+offset_top = 31.0
+offset_right = 104.0
+offset_bottom = 41.0
+texture_normal = ExtResource("2_noxds")
+texture_hover = ExtResource("4_oos0p")
+
+[node name="Volume-settings" type="Sprite2D" parent="."]
+position = Vector2(104, 80)
+texture = ExtResource("2_1snni")
+
+[node name="Slider-bar" type="Sprite2D" parent="Volume-settings"]
+position = Vector2(72, -3)
+texture = ExtResource("6_7mg24")
+
+[node name="HSlider" type="HSlider" parent="Volume-settings/Slider-bar"]
+offset_left = -37.0
+offset_top = -8.0
+offset_right = 37.0
+offset_bottom = 8.0
+theme_override_icons/grabber = ExtResource("5_5etg4")
+theme_override_icons/grabber_highlight = ExtResource("5_5etg4")
+theme_override_icons/grabber_disabled = ExtResource("5_5etg4")
+theme_override_styles/slider = SubResource("StyleBoxTexture_kffcx")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_i7ouw")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_0pq8t")
+max_value = 1.0
+step = 0.001
+script = ExtResource("6_iv6q5")
+busName = "Master"
+
+[node name="Master-L-button" type="TextureButton" parent="Volume-settings/Slider-bar/HSlider"]
+layout_mode = 0
+offset_left = -13.0
+offset_top = 4.0
+offset_right = -5.0
+offset_bottom = 12.0
+texture_normal = ExtResource("3_kcgqh")
+
+[node name="Master-R-button" type="TextureButton" parent="Volume-settings/Slider-bar/HSlider"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 4.0
+offset_right = 87.0
+offset_bottom = 12.0
+texture_normal = ExtResource("4_w25nj")
+
+[node name="Slider-bar2" type="Sprite2D" parent="Volume-settings"]
+position = Vector2(72, 11)
+texture = ExtResource("6_7mg24")
+
+[node name="HSlider2" type="HSlider" parent="Volume-settings/Slider-bar2"]
+offset_left = -37.0
+offset_top = -8.0
+offset_right = 37.0
+offset_bottom = 8.0
+theme_override_icons/grabber = ExtResource("5_5etg4")
+theme_override_icons/grabber_highlight = ExtResource("5_5etg4")
+theme_override_icons/grabber_disabled = ExtResource("5_5etg4")
+theme_override_styles/slider = SubResource("StyleBoxTexture_kffcx")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_i7ouw")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_0pq8t")
+max_value = 1.0
+step = 0.001
+script = ExtResource("6_iv6q5")
+busName = "SFX"
+
+[node name="Effects-L-button" type="TextureButton" parent="Volume-settings/Slider-bar2/HSlider2"]
+layout_mode = 0
+offset_left = -13.0
+offset_top = 4.0
+offset_right = -5.0
+offset_bottom = 12.0
+texture_normal = ExtResource("3_kcgqh")
+
+[node name="Effects-R-button" type="TextureButton" parent="Volume-settings/Slider-bar2/HSlider2"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 4.0
+offset_right = 87.0
+offset_bottom = 12.0
+texture_normal = ExtResource("4_w25nj")
+
+[node name="Slider-bar3" type="Sprite2D" parent="Volume-settings"]
+position = Vector2(72, 25)
+texture = ExtResource("6_7mg24")
+
+[node name="HSlider3" type="HSlider" parent="Volume-settings/Slider-bar3"]
+offset_left = -37.0
+offset_top = -8.0
+offset_right = 37.0
+offset_bottom = 8.0
+theme_override_icons/grabber = ExtResource("5_5etg4")
+theme_override_icons/grabber_highlight = ExtResource("5_5etg4")
+theme_override_icons/grabber_disabled = ExtResource("5_5etg4")
+theme_override_styles/slider = SubResource("StyleBoxTexture_kffcx")
+theme_override_styles/grabber_area = SubResource("StyleBoxTexture_i7ouw")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxTexture_0pq8t")
+max_value = 1.0
+step = 0.001
+script = ExtResource("6_iv6q5")
+busName = "Music"
+
+[node name="Music-L-button" type="TextureButton" parent="Volume-settings/Slider-bar3/HSlider3"]
+layout_mode = 0
+offset_left = -13.0
+offset_top = 4.0
+offset_right = -5.0
+offset_bottom = 12.0
+texture_normal = ExtResource("3_kcgqh")
+
+[node name="Music-R-button" type="TextureButton" parent="Volume-settings/Slider-bar3/HSlider3"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 4.0
+offset_right = 87.0
+offset_bottom = 12.0
+texture_normal = ExtResource("4_w25nj")
+
+[connection signal="pressed" from="Settings-menu/back" to="." method="_on_back_pressed"]

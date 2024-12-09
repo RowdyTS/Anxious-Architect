@@ -1,0 +1,107 @@
+[gd_scene load_steps=15 format=3 uid="uid://bl4dvurtbep8t"]
+
+[ext_resource type="Texture2D" uid="uid://dd8u4688omv5y" path="res://Assets/my assets/environment/start-screen.png" id="1_kg38p"]
+[ext_resource type="Script" path="res://Scripts/ending.gd" id="1_ofnv4"]
+[ext_resource type="Texture2D" uid="uid://c8y16iodifmte" path="res://Assets/my assets/Architect/Architect-final.png" id="2_f7dm6"]
+[ext_resource type="Texture2D" uid="uid://47luoea4rb7f" path="res://Assets/Architect-talking-loop-smiling.png" id="3_te63o"]
+[ext_resource type="Texture2D" uid="uid://cya6bne0j4owk" path="res://Assets/dialogue-box.png" id="4_wrwoj"]
+[ext_resource type="Texture2D" uid="uid://dd6tkgaf2pjja" path="res://Assets/my assets/environment/start-button.png" id="5_p5qyr"]
+[ext_resource type="Texture2D" uid="uid://bx6rgcqs5nyx5" path="res://Assets/my assets/environment/start-button-hover.png" id="6_1ywg8"]
+[ext_resource type="AudioStream" uid="uid://cwe52sn1lc6x8" path="res://music/main theme/Architect theme.wav" id="8_pr5qv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wco5a"]
+atlas = ExtResource("3_te63o")
+region = Rect2(0, 0, 98, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctgos"]
+atlas = ExtResource("3_te63o")
+region = Rect2(98, 0, 98, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sndu2"]
+atlas = ExtResource("3_te63o")
+region = Rect2(196, 0, 98, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ligx7"]
+atlas = ExtResource("3_te63o")
+region = Rect2(294, 0, 98, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eowht"]
+atlas = ExtResource("3_te63o")
+region = Rect2(392, 0, 98, 68)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tjiu2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wco5a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctgos")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sndu2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ligx7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eowht")
+}],
+"loop": true,
+"name": &"Talking",
+"speed": 10.0
+}]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_ofnv4")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(573.833, 323)
+scale = Vector2(3.26042, 3.36458)
+texture = ExtResource("1_kg38p")
+
+[node name="Architect Body" type="Sprite2D" parent="."]
+position = Vector2(775, 455)
+scale = Vector2(1.78125, 1.78125)
+texture = ExtResource("2_f7dm6")
+
+[node name="Animated Face" type="AnimatedSprite2D" parent="."]
+position = Vector2(773.588, 371)
+scale = Vector2(1.70588, 1.70588)
+sprite_frames = SubResource("SpriteFrames_tjiu2")
+animation = &"Talking"
+frame_progress = 0.0293762
+
+[node name="Dialogue-box" type="Sprite2D" parent="."]
+position = Vector2(908, 191)
+scale = Vector2(1.88575, 2.96102)
+texture = ExtResource("4_wrwoj")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 710.0
+offset_top = 122.0
+offset_right = 1098.0
+offset_bottom = 249.0
+theme_override_colors/font_color = Color(0, 0.909804, 0, 1)
+text = "I hope you had a fun time playing my game(s)
+the next time we meet I'll have learned to manage
+ my time and anxiety a bit better so that hopefully
+ I will have a full length game for you to play.
+  Thank you for everything :)"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 503.0
+offset_top = 160.0
+offset_right = 565.0
+offset_bottom = 271.0
+scale = Vector2(2.82515, 2.82515)
+texture_normal = ExtResource("5_p5qyr")
+texture_hover = ExtResource("6_1ywg8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_pr5qv")
+autoplay = true
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

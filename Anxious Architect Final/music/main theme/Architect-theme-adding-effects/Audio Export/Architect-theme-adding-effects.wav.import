@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dvfk1bxxbx1e7"
+path="res://.godot/imported/Architect-theme-adding-effects.wav-bdd0847865801ae37c35fbe8b0606f66.sample"
+
+[deps]
+
+source_file="res://music/main theme/Architect-theme-adding-effects/Audio Export/Architect-theme-adding-effects.wav"
+dest_files=["res://.godot/imported/Architect-theme-adding-effects.wav-bdd0847865801ae37c35fbe8b0606f66.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

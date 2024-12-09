@@ -6,6 +6,7 @@ const acceleration : int = 50
 var speed : int
 var direction : Vector2
 const max_y_vector : float = 0.6
+@onready var ball_sound: AudioStreamPlayer2D = $"../Ball Sound"
 
 #Called when the node enters the scene for the first time
 func _ready():
@@ -23,6 +24,7 @@ func _physics_process(delta):
 	var collider
 	if collision:
 		collider = collision.get_collider()
+		ball_sound.play()
 		#If ball hits a paddle
 		if collider == $"../Player" or collider == $"../CPU":
 			speed = speed + acceleration

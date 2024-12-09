@@ -12,6 +12,6 @@ func _on_body_entered(body: Node2D):
 
 func _on_timeline_ended():
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
-	get_tree().change_scene_to_file("res://Scenes/main scene.tscn")
+	get_tree().change_scene_to_file("res://Scenes/ending.tscn")
 	
 	
