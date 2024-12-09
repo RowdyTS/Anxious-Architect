@@ -6,7 +6,7 @@ func _on_texture_button_pressed():
 	# Start the Dialogic timeline
 	Dialogic.timeline_ended.connect(_on_timeline_ended)
 	Dialogic.start("res://Assets/Introduction.dtl")
-
+	
 
 func _on_timeline_ended():
 	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
