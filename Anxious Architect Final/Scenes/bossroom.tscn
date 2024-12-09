@@ -165,7 +165,7 @@ sprite_frames = SubResource("SpriteFrames_uwhsi")
 [node name="win_circle" type="Area2D" parent="."]
 position = Vector2(553, 44)
 collision_layer = 3
-collision_mask = 3
+collision_mask = 2
 script = ExtResource("5_rlkqn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="win_circle"]
