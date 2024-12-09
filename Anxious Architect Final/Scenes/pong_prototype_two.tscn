@@ -1,0 +1,137 @@
+[gd_scene load_steps=12 format=3 uid="uid://gu38g5xp78be"]
+
+[ext_resource type="Texture2D" uid="uid://byiogu72ij8on" path="res://Assets/p back.png" id="1_ah757"]
+[ext_resource type="Script" path="res://Scripts/pong_prototype_two.gd" id="2_kgyhn"]
+[ext_resource type="Script" path="res://Scripts/player.gd" id="3_7fnex"]
+[ext_resource type="Script" path="res://Scripts/cpu_two.gd" id="4_rylk3"]
+[ext_resource type="Script" path="res://Scripts/ball.gd" id="5_odh2f"]
+[ext_resource type="FontFile" uid="uid://ba5ip10xjdxtx" path="res://Assets/PressStart2P-vaV7.ttf" id="6_bp3my"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kiomr"]
+size = Vector2(10, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3hula"]
+size = Vector2(9, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sx50c"]
+size = Vector2(637, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g015a"]
+size = Vector2(637, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_brw02"]
+size = Vector2(76, 358)
+
+[node name="Main" type="Sprite2D"]
+texture_filter = 1
+scale = Vector2(1.81234, 1.81119)
+texture = ExtResource("1_ah757")
+centered = false
+script = ExtResource("2_kgyhn")
+
+[node name="Player" type="StaticBody2D" parent="."]
+position = Vector2(17, 317)
+script = ExtResource("3_7fnex")
+
+[node name="ColorRect" type="ColorRect" parent="Player"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -40.0
+offset_right = 10.0
+offset_bottom = 40.0
+grow_vertical = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(5, 0)
+shape = SubResource("RectangleShape2D_kiomr")
+
+[node name="CPU" type="StaticBody2D" parent="."]
+position = Vector2(613, 175)
+script = ExtResource("4_rylk3")
+
+[node name="ColorRect" type="ColorRect" parent="CPU"]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -40.0
+offset_right = 10.0
+offset_bottom = 40.0
+grow_vertical = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CPU"]
+position = Vector2(5, 0)
+shape = SubResource("RectangleShape2D_kiomr")
+
+[node name="Ball" type="CharacterBody2D" parent="."]
+position = Vector2(298, 179)
+collision_mask = 3
+script = ExtResource("5_odh2f")
+
+[node name="ColorRect" type="ColorRect" parent="Ball"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ball"]
+shape = SubResource("RectangleShape2D_3hula")
+
+[node name="Borders" type="StaticBody2D" parent="."]
+collision_layer = 2
+
+[node name="Top" type="CollisionShape2D" parent="Borders"]
+position = Vector2(318.5, -5)
+shape = SubResource("RectangleShape2D_sx50c")
+
+[node name="Bottom" type="CollisionShape2D" parent="Borders"]
+position = Vector2(318.5, 368)
+shape = SubResource("RectangleShape2D_g015a")
+
+[node name="ScoreLeft" type="Area2D" parent="."]
+
+[node name="Score Zone L" type="CollisionShape2D" parent="ScoreLeft"]
+position = Vector2(-38, 179)
+shape = SubResource("RectangleShape2D_brw02")
+
+[node name="ScoreRight" type="Area2D" parent="."]
+
+[node name="Score Zone R" type="CollisionShape2D" parent="ScoreRight"]
+position = Vector2(675, 180)
+shape = SubResource("RectangleShape2D_brw02")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[node name="PlayerScore" type="Label" parent="."]
+offset_left = 257.0
+offset_right = 297.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("6_bp3my")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CPUScore" type="Label" parent="."]
+offset_left = 301.0
+offset_right = 341.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("6_bp3my")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(319, 178)
+
+[connection signal="body_entered" from="ScoreLeft" to="." method="_on_score_left_body_entered"]
+[connection signal="body_entered" from="ScoreRight" to="." method="_on_score_right_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

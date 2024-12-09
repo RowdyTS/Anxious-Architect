@@ -1,0 +1,162 @@
+{ "frames": {
+   "bullet-hell-bg 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 1.aseprite": {
+    "frame": { "x": 352, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 2.aseprite": {
+    "frame": { "x": 704, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 3.aseprite": {
+    "frame": { "x": 1056, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 4.aseprite": {
+    "frame": { "x": 1408, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 5.aseprite": {
+    "frame": { "x": 1760, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 6.aseprite": {
+    "frame": { "x": 2112, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 7.aseprite": {
+    "frame": { "x": 2464, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 8.aseprite": {
+    "frame": { "x": 2816, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 9.aseprite": {
+    "frame": { "x": 3168, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 10.aseprite": {
+    "frame": { "x": 3520, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 11.aseprite": {
+    "frame": { "x": 3872, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 12.aseprite": {
+    "frame": { "x": 4224, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 13.aseprite": {
+    "frame": { "x": 4576, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 14.aseprite": {
+    "frame": { "x": 4928, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 15.aseprite": {
+    "frame": { "x": 5280, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   },
+   "bullet-hell-bg 16.aseprite": {
+    "frame": { "x": 5632, "y": 0, "w": 352, "h": 192 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 352, "h": 192 },
+    "sourceSize": { "w": 352, "h": 192 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.10.1-x64",
+  "image": "bullet-hell-bg-animated-spritesheet.png",
+  "format": "RGBA8888",
+  "size": { "w": 5984, "h": 192 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "borders", "opacity": 255, "blendMode": "normal" },
+   { "name": "glitch", "opacity": 255, "blendMode": "normal" },
+   { "name": "borders Copy", "opacity": 255, "blendMode": "normal" },
+   { "name": "platformer", "opacity": 255, "blendMode": "normal" },
+   { "name": "Layer 1", "opacity": 255, "blendMode": "normal" },
+   { "name": "pong", "opacity": 255, "blendMode": "normal" },
+   { "name": "pong glitch b", "opacity": 255, "blendMode": "hard_light" },
+   { "name": "pong glitch r", "opacity": 255, "blendMode": "hard_light" },
+   { "name": "shading", "opacity": 255, "blendMode": "multiply" }
+  ],
+  "slices": [
+  ]
+ }
+}
