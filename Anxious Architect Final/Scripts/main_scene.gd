@@ -1,8 +1,8 @@
 extends Node2D
 
 @onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
-@onready var pause_menu = $"Pause-menu"
-@onready var settings_menu = $settingsMenu
+@onready var pause_menu = $"Sprite2D/Pause-menu"
+@onready var settings_menu = $"Sprite2D/settingsMenu"
 var paused = false
 var settingsOpen = false
 

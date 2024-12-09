@@ -7,8 +7,8 @@ const winning_score : int = 7
 
 # pause code
 
-@onready var pause_menu = $"Pause-menu"
-@onready var settings_menu = $settingsMenu
+@onready var pause_menu = $"Camera2D/Pause-menu"
+@onready var settings_menu = $Camera2D/settingsMenu
 var paused = false
 var settingsOpen = false
 

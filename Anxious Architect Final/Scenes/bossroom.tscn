@@ -165,6 +165,7 @@ scale = Vector2(3.30682, 3.4375)
 sprite_frames = SubResource("SpriteFrames_uwhsi")
 
 [node name="Pause-menu" parent="AnimatedSprite2D" instance=ExtResource("2_grqqo")]
+visible = false
 z_index = 4
 offset_left = -174.79
 offset_top = -94.5454
@@ -172,6 +173,7 @@ offset_right = -174.79
 offset_bottom = -94.5454
 
 [node name="settingsMenu" parent="AnimatedSprite2D" instance=ExtResource("3_hx776")]
+visible = false
 z_index = 5
 offset_left = -174.79
 offset_top = -94.5454
