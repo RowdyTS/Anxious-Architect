@@ -26,8 +26,9 @@ func check_for_winner():
 		$Timer.stop()  # Stop the game timer
 		Dialogic.timeline_ended.connect(_on_timeline_ended)  # Connect the signal to handle when the timeline ends
 		Dialogic.start("res://Assets/Platformer.dtl")  # Start the dialog scene
+		
 
 # This function is called when the Dialogic timeline ends
 func _on_timeline_ended():
-	# You can add logic here if you want to do something after the dialog finishes
-	print("The Dialogic timeline has ended!")
+	Dialogic.timeline_ended.disconnect(_on_timeline_ended)
+	get_tree().change_scene_to_file("res://Scenes/industrial_level.tscn")

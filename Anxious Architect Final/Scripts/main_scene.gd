@@ -2,7 +2,7 @@ extends Node2D
 
 
 
-func _on_button_pressed():
+func _on_texture_button_pressed():
 	# Start the Dialogic timeline
 	Dialogic.timeline_ended.connect(_on_timeline_ended)
 	Dialogic.start("res://Assets/Introduction.dtl")

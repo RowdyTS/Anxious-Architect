@@ -11,7 +11,7 @@ The architect takes a deep breath in and out, and the thoughts seem to slow down
 The storm of thoughts slows down with each exhale until the thoughts are quiet enough for the architect to talk.
 "The Architect": "I'm so sor-"
 You cut off the architect
-[text_input placeholder=""Take a deep breath and pause your thoughts, listen to it without judgement and let it pass!""]
+[text_input]
 "The Architect": "I've never let a thought pass without thinking about it before..."
 You watch as the architect takes one more deep breath and closes their eyes, accepting the thought and letting it pass,  the thoughts coming out of the architect's head aren't as loud, and they begin to dissipate as soon as they come to form.
 You and the architect sit and breathe, taking more time with each breath to pause and accept each thought that has come through your mind.
@@ -42,5 +42,5 @@ With a snap of their fingers, the thoughts and game set pieces begin to fly arou
 [background arg="res://Assets/office-base.png" fade="0.0"]
 "The Architect": "Welcome back to my office, which is a bit more mindful about the organization"
 The architect's face deforms into an un-serious wink, as you look around the office you can see all the clutter and mess has been organized into a file folder, and the rest of the mess has been neatly put into a trash can.
-"The Architect": "Now then how about a reimagining of ping?"
+"The Architect": "Now then how about a reimagining of pong?"
 you: "sounds good to me!"

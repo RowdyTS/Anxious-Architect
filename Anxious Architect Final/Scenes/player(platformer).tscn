@@ -1,0 +1,75 @@
+[gd_scene load_steps=10 format=3 uid="uid://drkshb6hgcaup"]
+
+[ext_resource type="Texture2D" uid="uid://busbopebe80fc" path="res://Sprites/flatboy-pr-fullset-6variations.png" id="1_a0uk8"]
+[ext_resource type="AudioStream" uid="uid://b5ss67dmihhr1" path="res://Audio/Jump Sound.mp3" id="3_pvymm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_moxhr"]
+atlas = ExtResource("1_a0uk8")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c51or"]
+atlas = ExtResource("1_a0uk8")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0aa1i"]
+atlas = ExtResource("1_a0uk8")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjhko"]
+atlas = ExtResource("1_a0uk8")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4khyv"]
+atlas = ExtResource("1_a0uk8")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6x1pf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_moxhr")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c51or")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0aa1i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjhko")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4khyv")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nmna4"]
+size = Vector2(22, 27)
+
+[node name="Player (platformer)" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_6x1pf")
+animation = &"Jump"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 2.5)
+shape = SubResource("RectangleShape2D_nmna4")
+
+[node name="Jump_Sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_pvymm")
