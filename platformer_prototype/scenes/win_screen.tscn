@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0v7ls7w0urvo"]
+
+[ext_resource type="Texture2D" uid="uid://blssp6tgdxw5a" path="res://assets/You Win Screen.jpg" id="1_vbwb2"]
+[ext_resource type="AudioStream" uid="uid://dke25cfcdov5a" path="res://assets/Level Win.mp3" id="2_d3j2p"]
+
+[node name="TextureRect" type="TextureRect"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_vbwb2")
+
+[node name="Level_Win" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_d3j2p")
