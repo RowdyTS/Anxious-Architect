@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cjctwj68wgofu"]
+[gd_scene load_steps=8 format=3 uid="uid://cjctwj68wgofu"]
 
 [ext_resource type="Script" path="res://Scripts/main_scene.gd" id="1_nnil5"]
 [ext_resource type="Texture2D" uid="uid://dd8u4688omv5y" path="res://Assets/my assets/environment/start-screen.png" id="2_2556a"]
@@ -6,14 +6,31 @@
 [ext_resource type="Texture2D" uid="uid://bx6rgcqs5nyx5" path="res://Assets/my assets/environment/start-button-hover.png" id="4_bwen7"]
 [ext_resource type="AudioStream" uid="uid://cwe52sn1lc6x8" path="res://music/main theme/Architect theme.wav" id="5_smnec"]
 [ext_resource type="PackedScene" uid="uid://buo431s6hf7a4" path="res://aa-uis/Pause-menu.tscn" id="6_w363q"]
+[ext_resource type="PackedScene" uid="uid://c4470ekmcldj3" path="res://aa-uis/Settings-menu.tscn" id="7_mn2ui"]
 
 [node name="Node2D" type="Node2D"]
+process_mode = 1
 script = ExtResource("1_nnil5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(577, 325.5)
 scale = Vector2(3.25568, 3.38021)
 texture = ExtResource("2_2556a")
+
+[node name="Pause-menu" parent="Sprite2D" instance=ExtResource("6_w363q")]
+process_mode = 3
+z_index = 4
+offset_left = -176.0
+offset_top = -95.4083
+offset_right = -176.0
+offset_bottom = -95.4083
+
+[node name="settingsMenu" parent="Sprite2D" instance=ExtResource("7_mn2ui")]
+z_index = 5
+offset_left = -176.0
+offset_top = -96.5916
+offset_right = -176.0
+offset_bottom = -96.5916
 
 [node name="TextureButton" type="TextureButton" parent="."]
 offset_left = 503.0
@@ -27,13 +44,5 @@ texture_hover = ExtResource("4_bwen7")
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_smnec")
 autoplay = true
-
-[node name="Pause-menu" parent="." instance=ExtResource("6_w363q")]
-process_mode = 3
-offset_left = 120.0
-offset_top = 85.0
-offset_right = 120.0
-offset_bottom = 85.0
-scale = Vector2(2.5, 2.5)
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

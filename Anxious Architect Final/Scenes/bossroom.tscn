@@ -1,8 +1,10 @@
-[gd_scene load_steps=29 format=3 uid="uid://bay8cbnpagsf1"]
+[gd_scene load_steps=31 format=3 uid="uid://bay8cbnpagsf1"]
 
 [ext_resource type="PackedScene" uid="uid://ddf6u77vdc131" path="res://Scenes/boss.tscn" id="1_33s6p"]
 [ext_resource type="Script" path="res://Scripts/bossroom.gd" id="1_uj5ff"]
+[ext_resource type="PackedScene" uid="uid://buo431s6hf7a4" path="res://aa-uis/Pause-menu.tscn" id="2_grqqo"]
 [ext_resource type="PackedScene" uid="uid://ba8p8rowagp2v" path="res://Scenes/bh_player.tscn" id="2_sr1tt"]
+[ext_resource type="PackedScene" uid="uid://c4470ekmcldj3" path="res://aa-uis/Settings-menu.tscn" id="3_hx776"]
 [ext_resource type="Texture2D" uid="uid://cvnp6lr1eydku" path="res://Assets/bullet-hell-bg-animated-spritesheet.png" id="3_rhmom"]
 [ext_resource type="Script" path="res://Scripts/win_circle.gd" id="5_rlkqn"]
 
@@ -161,6 +163,20 @@ visibility_layer = 2
 position = Vector2(578, 325)
 scale = Vector2(3.30682, 3.4375)
 sprite_frames = SubResource("SpriteFrames_uwhsi")
+
+[node name="Pause-menu" parent="AnimatedSprite2D" instance=ExtResource("2_grqqo")]
+z_index = 4
+offset_left = -174.79
+offset_top = -94.5454
+offset_right = -174.79
+offset_bottom = -94.5454
+
+[node name="settingsMenu" parent="AnimatedSprite2D" instance=ExtResource("3_hx776")]
+z_index = 5
+offset_left = -174.79
+offset_top = -94.5454
+offset_right = -174.79
+offset_bottom = -94.5454
 
 [node name="win_circle" type="Area2D" parent="."]
 position = Vector2(553, 44)

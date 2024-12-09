@@ -1,11 +1,14 @@
-[gd_scene load_steps=26 format=4 uid="uid://c6cygnbpyi81p"]
+[gd_scene load_steps=29 format=4 uid="uid://c6cygnbpyi81p"]
 
 [ext_resource type="PackedScene" uid="uid://drkshb6hgcaup" path="res://Scenes/player(platformer).tscn" id="1_8a4iq"]
+[ext_resource type="Script" path="res://Scenes/platformer_level.gd" id="1_dyv8b"]
 [ext_resource type="Texture2D" uid="uid://be6ycv85pacod" path="res://Assets/summer-bg.png" id="1_nb37g"]
 [ext_resource type="Texture2D" uid="uid://d4nqsufkoe4x6" path="res://Assets/tilemap_packed.png" id="2_7osa7"]
 [ext_resource type="PackedScene" uid="uid://djilul1f6uwwe" path="res://Scenes/platform.tscn" id="3_b74en"]
 [ext_resource type="Script" path="res://Scripts/player(platformer)_level2.gd" id="3_t71c5"]
 [ext_resource type="PackedScene" uid="uid://bblbmxkld0cxf" path="res://Scenes/killzone.tscn" id="4_1euux"]
+[ext_resource type="PackedScene" uid="uid://buo431s6hf7a4" path="res://aa-uis/Pause-menu.tscn" id="4_lwyp8"]
+[ext_resource type="PackedScene" uid="uid://c4470ekmcldj3" path="res://aa-uis/Settings-menu.tscn" id="5_fhnly"]
 [ext_resource type="PackedScene" uid="uid://dhirh15l84j3u" path="res://Scenes/win_diamond.tscn" id="5_hv1kj"]
 [ext_resource type="AudioStream" uid="uid://cnn7rfkdchcu8" path="res://Assets/architect-theme-final.wav" id="8_ck6k6"]
 [ext_resource type="PackedScene" uid="uid://b73dc8pfbgtoo" path="res://Scenes/platform_long.tscn" id="8_dyuuu"]
@@ -395,6 +398,7 @@ colors = PackedColorArray(0.417257, 0.417257, 0.417257, 1, 0.87186, 0.87186, 0.8
 
 [node name="Platformer" type="Node2D"]
 position = Vector2(15, 43)
+script = ExtResource("1_dyv8b")
 
 [node name="Background (Summer)" type="Sprite2D" parent="."]
 position = Vector2(345, 53)
@@ -407,7 +411,7 @@ scale = Vector2(1, 1.1)
 texture = ExtResource("1_nb37g")
 
 [node name="Player" parent="." instance=ExtResource("1_8a4iq")]
-position = Vector2(142, 64)
+position = Vector2(144, 69)
 scale = Vector2(0.5, 0.5)
 script = ExtResource("3_t71c5")
 
@@ -419,6 +423,24 @@ limit_right = 1440
 limit_bottom = 200
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0
+
+[node name="Pause-menu" parent="Player" instance=ExtResource("4_lwyp8")]
+visible = false
+z_index = 4
+offset_left = -264.0
+offset_top = -142.0
+offset_right = -264.0
+offset_bottom = -142.0
+scale = Vector2(1.5, 1.5)
+
+[node name="settingsMenu" parent="Player" instance=ExtResource("5_fhnly")]
+visible = false
+z_index = 5
+offset_left = -264.0
+offset_top = -144.0
+offset_right = -264.0
+offset_bottom = -144.0
+scale = Vector2(1.5, 1.5)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(142, 81)

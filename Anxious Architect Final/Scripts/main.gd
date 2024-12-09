@@ -4,6 +4,37 @@ var score := [0, 0] # 0=Player and 1=CPU
 const paddle_speed : int = 500
 const winning_score : int = 7
 
+# pause code
+@onready var pause_menu = $"Pause-menu"
+@onready var settings_menu = $settingsMenu
+var paused = false
+var settingsOpen = false
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("Pause"):
+		pauseMenu()
+
+func pauseMenu():
+	if paused:
+		pause_menu.hide()
+		get_tree().paused = false
+	else:
+		get_tree().paused = true
+		pause_menu.show()
+		
+	
+	paused = !paused
+
+func settingsMenu():
+	if settingsOpen:
+		settings_menu.hide()
+	else:
+		settings_menu.show()
+		
+	settingsOpen = !settingsOpen
+		
+
 
 func _on_timer_timeout():
 	$Ball.new_ball()

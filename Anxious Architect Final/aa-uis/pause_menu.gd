@@ -1,6 +1,6 @@
 extends Control
 
-@onready var main = $"../"
+@onready var main = $"../../"
 
 
 func _on_resume_pressed() -> void:
@@ -12,8 +12,10 @@ func _on_settings_pressed() -> void:
 
 
 func _on_exit_pressed() -> void:
+	main.pauseMenu()
 	get_tree().change_scene_to_file("res://Scenes/main scene.tscn")
 
 
 func _on_quit_pressed() -> void:
+	main.pauseMenu()
 	get_tree().quit()

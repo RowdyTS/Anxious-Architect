@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bjnhuabmcj1fs"]
+[gd_scene load_steps=15 format=3 uid="uid://bjnhuabmcj1fs"]
 
 [ext_resource type="Texture2D" uid="uid://byiogu72ij8on" path="res://Assets/p back.png" id="1_61lct"]
 [ext_resource type="FontFile" uid="uid://ba5ip10xjdxtx" path="res://Assets/PressStart2P-vaV7.ttf" id="2_hfmbd"]
@@ -6,7 +6,9 @@
 [ext_resource type="Script" path="res://Scripts/player.gd" id="3_joyuj"]
 [ext_resource type="Script" path="res://Scripts/cpu.gd" id="4_eadle"]
 [ext_resource type="Script" path="res://Scripts/ball.gd" id="4_qc5m8"]
+[ext_resource type="PackedScene" uid="uid://buo431s6hf7a4" path="res://aa-uis/Pause-menu.tscn" id="7_d4sbc"]
 [ext_resource type="AudioStream" uid="uid://crnbbahujy6r3" path="res://Audio/ping_pong_8bit_beeep.ogg" id="7_kg8td"]
+[ext_resource type="PackedScene" uid="uid://c4470ekmcldj3" path="res://aa-uis/Settings-menu.tscn" id="8_qw0pn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kiomr"]
 size = Vector2(10, 80)
@@ -132,6 +134,22 @@ vertical_alignment = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(319, 178)
+
+[node name="Pause-menu" parent="Camera2D" instance=ExtResource("7_d4sbc")]
+visible = false
+offset_left = -316.793
+offset_top = -177.448
+offset_right = -316.793
+offset_bottom = -177.448
+scale = Vector2(1.8, 1.8)
+
+[node name="settingsMenu" parent="Camera2D" instance=ExtResource("8_qw0pn")]
+visible = false
+offset_left = -316.793
+offset_top = -178.0
+offset_right = -316.793
+offset_bottom = -178.0
+scale = Vector2(1.8, 1.8)
 
 [node name="Ball Sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_kg8td")

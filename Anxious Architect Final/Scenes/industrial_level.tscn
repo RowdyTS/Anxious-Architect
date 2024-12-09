@@ -1,7 +1,10 @@
-[gd_scene load_steps=27 format=3 uid="uid://sdqdp3ej5c8"]
+[gd_scene load_steps=30 format=3 uid="uid://sdqdp3ej5c8"]
 
 [ext_resource type="Texture2D" uid="uid://4klsqouj01pa" path="res://Sprites/industrial-bg.png" id="1_4a4kq"]
+[ext_resource type="Script" path="res://Scenes/industrial_level.gd" id="1_0088p"]
 [ext_resource type="PackedScene" uid="uid://drkshb6hgcaup" path="res://Scenes/player(platformer).tscn" id="1_ap7f1"]
+[ext_resource type="PackedScene" uid="uid://buo431s6hf7a4" path="res://aa-uis/Pause-menu.tscn" id="1_mb2fv"]
+[ext_resource type="PackedScene" uid="uid://c4470ekmcldj3" path="res://aa-uis/Settings-menu.tscn" id="2_mrsyt"]
 [ext_resource type="Texture2D" uid="uid://biejp3ch275ta" path="res://Sprites/kenney_pixel-platformer-industrial-expansion/Tilemap/tilemap_packed.png" id="2_sy3oc"]
 [ext_resource type="Script" path="res://Scripts/player(platform).gd" id="3_18em4"]
 [ext_resource type="PackedScene" uid="uid://br3dw1p1qab8o" path="res://Scenes/industrial_platform.tscn" id="3_ggf1u"]
@@ -484,6 +487,7 @@ size = Vector2(271, 130)
 size = Vector2(9, 183)
 
 [node name="industrial_level" type="Node2D"]
+script = ExtResource("1_0088p")
 
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(1126, -42)
@@ -491,13 +495,29 @@ scale = Vector2(3.73349, 3.407)
 texture = ExtResource("1_4a4kq")
 
 [node name="Player" parent="." instance=ExtResource("1_ap7f1")]
-position = Vector2(-17, 31)
+position = Vector2(-3, 26)
 script = ExtResource("3_18em4")
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(3, 3)
 limit_bottom = 175
 limit_smoothed = true
+
+[node name="Pause-menu" parent="Player" instance=ExtResource("1_mb2fv")]
+visible = false
+z_index = 4
+offset_left = -171.0
+offset_top = -90.0
+offset_right = -171.0
+offset_bottom = -90.0
+
+[node name="settingsMenu" parent="Player" instance=ExtResource("2_mrsyt")]
+visible = false
+z_index = 5
+offset_left = -172.0
+offset_top = -91.0
+offset_right = -172.0
+offset_bottom = -91.0
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-4, 0)
