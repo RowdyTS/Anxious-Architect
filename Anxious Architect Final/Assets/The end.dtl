@@ -1,0 +1,31 @@
+[background arg="res://Assets/office-base.png" fade="0.0"]
+join "The Architect" center
+"The Architect": "Woo! You did it! Now there's just one more game to tackle with these mindfulness techniques, what do you think? wanna play?"
+you: "Yeah I do!"
+The Architect snaps their fingers and the screen goes dark...
+leave "The Architect" [animation="Instant Out" length="0.0"]
+[background fade="0.0"]
+The Architect appears slowly from the darkness.
+join "The Architect" center [animation="Fade In" length="3.0"]
+"The Architect": "I know it doesn't seem like much yet but just follow me through here."
+The architect beckons you to follow...
+You begin to follow the architect through a hallway with picture frames of the games you've played and moments you've had together.
+"The Architect": "I wasn't quite sure how to add you're most thoughtful lesson you taught me into a game, sometimes games aren't about the gameplay, the graphics, or the story, but more so about the lessons of interactivity they teach."
+"The Architect": "The key word there is 'interactivity' something that connects you to the game, or you to someone else, and for me I needed that connection to get the help I needed, and this 'game' was the best way I could think of that."
+The architect walks up to a door at the end of the hall way and opens it for you to enter.
+- Walk in
+"The Architect": "I had planned to make an RPG for you to battle your thoughts and deepest fears like you did with me but I didn't like the idea of all the menu's and buttons in the way it felt too distracting and overwhelming."
+"The Architect": "Of course some battles will be too tough even for you or the mindfulness techniques in the first place, and that's when I thought of one button that would be useful to anyone who needs help..."
+Withing the room there is a single button with a simple sentence on it that is all to familiar. 
+Call for Help.
+"The Architect": "It's an important option that's always available and in real life we often forget we have that option, so I thought it'd be good to remind the player that it's always okay to ask for help."
+"The Architect": "It's kind of like how you helped me to breathe and learn these techniques, being able to recognize symptoms of anxiety and help others is the main aim of this final 'game'  that I made for you. All of this is thanks to you."
+Another door appears to your left.
+The architect gestures his hand toward the door.
+"The Architect": "I know we've had fun and you've helped me a lot but I thought I'd show you the exit now, you don't have to leave, you can stay and play my new mindful games, but I have a lot to work on myself before I'm ready to create a game that you'll really enjoy."
+"The Architect": "I want to thank you again for helping me realize my anxious actions and symptoms, so please come by again."
+The architect smiles at his desk, you are given the option to stay and replay the games the architect has made or finish the game...
+- Stay and Play?
+- Walk out of the door
+	THANK YOU FOR PLAYING ANXIOUS ARCHITECT!
+	"Hey player, it's me THE ARCHITECT, I hope you had a fun time playing my game(s) the next time we meet I'll have learned to manage my time and anxiety a bit better so that hopefully I will have a full length game for you to play.  Thank you for everything \:) - AA"

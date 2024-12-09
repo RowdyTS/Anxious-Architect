@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://ba8p8rowagp2v"]
+
+[ext_resource type="Script" path="res://Scripts/player.gd" id="1_wv3g7"]
+[ext_resource type="Texture2D" uid="uid://bh3i6v3dkfsk6" path="res://assets/hand.png" id="2_wgqwv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ap277"]
+
+[node name="player" type="CharacterBody2D"]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_wv3g7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(5.36442e-07, -0.0352162)
+scale = Vector2(0.0516432, 0.0507629)
+texture = ExtResource("2_wgqwv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ap277")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+custom_minimum_size = Vector2(50, 0)
+offset_left = -23.0
+offset_top = -27.0
+offset_right = 27.0
+offset_bottom = -11.0
+theme_override_font_sizes/font_size = 8
+value = 100.0
