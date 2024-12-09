@@ -1,6 +1,13 @@
 extends Node2D
 
 @onready var audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
+@onready var pause_menu: Control = $"Pause-menu"
+
+
+
+
+
+
 
 
 func _on_texture_button_pressed():
